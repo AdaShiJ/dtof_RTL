@@ -5,25 +5,27 @@
 module peakDetecter
 (
     input clk,
-    input [`peakMax:0] NoC, 
+    input [`peakMax-1:0] NoC, 
     input [1:0] status,
-    input [`peakMax:0] addr, 
+    input [`Nb:1] addr, 
     input reset, 
-    output reg [`peakMax:0] peakCH, 
-    output reg [`peakMax:0] peakFH
+    output reg [`Nb:1] peakCH, 
+    output reg [`Nb:1] peakFH
 );
-    reg [`peakMax : 0] recentMax = 0;
-    reg [`peakMax : 0] addrSaver = 0;
+    reg [`peakMax-1 : 0] recentMax = 0;
+    reg [`Nb:1] addrSaver = 0;
     //reg outputEnable;
     always @(posedge clk or posedge reset) begin
         if (reset) begin
             peakCH <= 0;
             peakFH <= 0;
+            recentMax <= 0;
+            addrSaver <= 0;
         end
         else begin
             recentMax <= (NoC > recentMax) ? NoC : recentMax;
             addrSaver <= (NoC > recentMax) ? addr : addrSaver;
-                if (status == 2'b10) begin
+                if (status == 2'b11) begin
                     peakCH <= addrSaver;
                     peakFH <= 0;
                 end

@@ -5,12 +5,12 @@ module peakDetecterTB (
     //ports
 );
     reg clk;
-    reg [`peakMax:0] NoC; 
+    reg [`peakMax-1:0] NoC; 
     reg [1:0] status;
-    reg [`peakMax:0] addr; 
+    reg [`peakMax-1:0] addr; 
     reg reset;
-    wire [`peakMax:0] peakCH;
-    wire [`peakMax:0] peakFH;
+    wire [`peakMax-1:0] peakCH;
+    wire [`peakMax-1:0] peakFH;
     initial clk = 0;
     always #1 clk = ~clk;
 
@@ -35,18 +35,18 @@ module peakDetecterTB (
         addr = 3;
         #9
         NoC = 7;
-        status = 2'b10;
+        status = 2'b11;
         addr = 4;
     end
 
 peakDetecter u0( 
     .clk(clk), 
-    .NoC(NoC[`peakMax:0]), 
+    .NoC(NoC[`peakMax-1:0]), 
     .status(status[1:0]), 
-    .addr(addr[`peakMax:0]), 
+    .addr(addr[`peakMax-1:0]), 
     .reset(reset), 
-    .peakCH(peakCH[`peakMax:0]), 
-    .peakFH(peakFH[`peakMax:0])
+    .peakCH(peakCH[`peakMax-1:0]), 
+    .peakFH(peakFH[`peakMax-1:0])
     );
 
 endmodule
