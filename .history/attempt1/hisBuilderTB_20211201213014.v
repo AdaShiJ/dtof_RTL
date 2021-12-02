@@ -159,14 +159,12 @@ peakDetecter peakDetecterU0(
     .peakFH(peakFH[`Nb:1])
     );
 
-
+endmodule
 
 algebraicBlock  algebraicBlockU0(
     .peakCH(peakCH),
     //input peakReady,
     .THminus(THminus),
     .THpositive(THpositive),
-    .delta(delta)
+    .(delta)
 );
-
-endmodule

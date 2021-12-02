@@ -13,10 +13,6 @@ module hisBuilderTB (
     wire [1:0] dataFinish;
     wire [`Nb:1] peakCH;
     wire [`Nb:1] peakFH;
-    wire [`Nb:1] THminus;
-    wire [`Nb:1] THpositive;
-    wire [`Nb:1] delta;
-
     initial clk = 0;
     always #1 clk = ~clk;
 
@@ -159,14 +155,12 @@ peakDetecter peakDetecterU0(
     .peakFH(peakFH[`Nb:1])
     );
 
-
+endmodule
 
 algebraicBlock  algebraicBlockU0(
-    .peakCH(peakCH),
+    input peakCH,
     //input peakReady,
-    .THminus(THminus),
-    .THpositive(THpositive),
-    .delta(delta)
+    output reg THminus,
+    output reg THpositive,
+    output reg delta
 );
-
-endmodule

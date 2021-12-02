@@ -166,7 +166,7 @@ algebraicBlock  algebraicBlockU0(
     //input peakReady,
     .THminus(THminus),
     .THpositive(THpositive),
-    .delta(delta)
+    .(delta)
 );
 
 endmodule
