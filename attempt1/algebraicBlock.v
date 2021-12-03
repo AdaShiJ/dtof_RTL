@@ -18,7 +18,7 @@ reg [`Nb:1] upperBoundCH;
 always @(*) begin
     upperBound <= ~0;
     upperBoundCH <= ~0;
-    SB = 1 << (`Nb - 1); //32
+    SB = 1 << (`Nb - 1) + 1 << (`Nb - 2); //use the middle value of bin
     CH = peakCH << (`Np - `Nb);
     TTHminus = CH - SB;//bound
     TTHpositive = CH + SB;//bound
