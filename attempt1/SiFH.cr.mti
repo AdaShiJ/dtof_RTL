@@ -1,11 +1,4 @@
-{C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/algebraicBlockTB.v} {1 {vlog -work work -vopt -stats=none {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/algebraicBlockTB.v}
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module algebraicBlockTB
-
-Top level modules:
-	algebraicBlockTB
-
-} {} {}} {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v} {1 {vlog -work work -vopt -stats=none {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v}
+{C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v} {1 {vlog -work work -vopt -stats=none {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module srLatch
 -- Compiling module deMux
@@ -45,27 +38,6 @@ Top level modules:
 End time: 10:57:57 on Dec 02,2021, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
-} {} {}} {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderReg.v} {1 {vlog -work work -vopt -stats=none {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderReg.v}
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module hisBuilderReg
-
-Top level modules:
-	hisBuilderReg
-
-} {} {}} {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/peakDetecter.v} {1 {vlog -work work -vopt -stats=none {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/peakDetecter.v}
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module peakDetecter
-
-Top level modules:
-	peakDetecter
-
-} {} {}} {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderTB.v} {1 {vlog -work work -vopt -stats=none {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderTB.v}
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module hisBuilderTB
-
-Top level modules:
-	hisBuilderTB
-
 } {} {}} {{D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/algebraicBlock.v}} {0 {vlog -work work -vopt {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/algebraicBlock.v}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Start time: 10:57:58 on Dec 02,2021
@@ -89,16 +61,6 @@ Top level modules:
 	hisBuilder
 End time: 10:57:57 on Dec 02,2021, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
-
-} {} {}} {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/algebraicBlock.v} {1 {vlog -work work -vopt -stats=none {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/algebraicBlock.v}
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module algebraicBlock
-
-Top level modules:
-	algebraicBlock
-
-} {} {}} {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/parametersSiFH.vh} {1 {vlog -work work -vopt -stats=none {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/parametersSiFH.vh}
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 
 } {} {}} {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/peakDetecterTB.v} {1 {vlog -work work -vopt -stats=none {C:/Users/jia/OneDrive - Delft University of Technology/thesis/RTL/attempt1/peakDetecterTB.v}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016

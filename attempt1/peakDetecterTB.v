@@ -7,10 +7,10 @@ module peakDetecterTB (
     reg clk;
     reg [`peakMax-1:0] NoC; 
     reg [1:0] status;
-    reg [`peakMax-1:0] addr; 
+    reg [`Nb:1] addr; 
     reg reset;
-    wire [`peakMax-1:0] peakCH;
-    wire [`peakMax-1:0] peakFH;
+    wire [`Nb:1] peakCH;
+    wire [`Nb:1] peakFH;
     initial clk = 0;
     always #1 clk = ~clk;
 
@@ -43,10 +43,10 @@ peakDetecter u0(
     .clk(clk), 
     .NoC(NoC[`peakMax-1:0]), 
     .status(status[1:0]), 
-    .addr(addr[`peakMax-1:0]), 
+    .addr(addr[`Nb:1]), 
     .reset(reset), 
-    .peakCH(peakCH[`peakMax-1:0]), 
-    .peakFH(peakFH[`peakMax-1:0])
+    .peakCH(peakCH[`Nb:1]), 
+    .peakFH(peakFH[`Nb:1])
     );
 
 endmodule

@@ -86,17 +86,6 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	hisBuilderReg
 
-} {} {}} {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v} {1 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v}
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module srLatch
--- Compiling module deMux
--- Compiling module Mux
--- Compiling module memReset
--- Compiling module hisBuilder
-
-Top level modules:
-	hisBuilder
-
 } {} {}} {{D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v}} {1 {vlog -work work -vopt {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Start time: 21:48:10 on Dec 01,2021
@@ -111,5 +100,23 @@ Top level modules:
 	hisBuilder
 End time: 21:48:10 on Dec 01,2021, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
+
+} {} {}} {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v} {1 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module srLatch
+-- Compiling module deMux
+-- Compiling module Mux
+-- Compiling module memReset
+-- Compiling module hisBuilder
+
+Top level modules:
+	hisBuilder
+
+} {} {}} {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/algebraicBlockTB.v} {1 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/algebraicBlockTB.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module algebraicBlockTB
+
+Top level modules:
+	algebraicBlockTB
 
 } {} {}}
