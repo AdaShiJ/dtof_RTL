@@ -9,15 +9,14 @@ z2
 cModel Technology
 Z0 dD:/OneDrive - Delft University of Technology/thesis/RTL/attempt1
 T_opt
-!s110 1638879178
-Vid4WNUEcUX>0nOMGVN2jk2
+!s110 1638971650
+VYhbzNC?<DDPW>dkJ7E<@?0
 04 12 4 work hisBuilderTB fast 0
-=1-18c04d611060-61af4fc9-327-3c4c
+=6-18c04d611060-61b0b902-74-122c
 Z1 o-quiet -auto_acc_if_foreign -work work +acc
 Z2 tCvgOpt 0
 n@_opt
 Z3 OL;O;10.5;63
-R0
 T_opt1
 !s110 1638786156
 VPMBh=<kMJ@U;1]15OPZK[3
@@ -39,7 +38,7 @@ n@_opt2
 R3
 R0
 valgebraicBlock
-Z4 !s110 1638890938
+Z4 !s110 1638971645
 !i10b 1
 !s100 kKb;_jW2n8NUc4IGQ74B[3
 I1^@LY70a@BAXY@9JgV1Sj1
@@ -53,7 +52,7 @@ Z7 OL;L;10.5;63
 r1
 !s85 0
 31
-Z8 !s108 1638890938.000000
+Z8 !s108 1638971645.000000
 !s107 D:\OneDrive - Delft University of Technology\thesis\RTL\attempt1\parametersSiFH.vh|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/algebraicBlock.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/algebraicBlock.v|
 !i113 0
@@ -67,7 +66,7 @@ R4
 IdXBMPM]_A6i@>b`]Q^Q<e3
 R5
 R6
-w1638480817
+w1638910681
 8D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/algebraicBlockTB.v
 FD:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/algebraicBlockTB.v
 L0 4
@@ -83,29 +82,29 @@ R9
 R2
 nalgebraic@block@t@b
 vdeMux
-R4
+Z10 !s110 1638911525
 !i10b 1
 !s100 ;CiK>JWe^zZ2<DhE1^B<_1
 ID_MRhA=She[Wnk52zn1kz1
 R5
 R6
-Z10 w1638352221
-Z11 8D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v
-Z12 FD:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v
+Z11 w1638352221
+Z12 8D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v
+Z13 FD:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v
 L0 22
 R7
 r1
 !s85 0
 31
-R8
-Z13 !s107 D:\OneDrive - Delft University of Technology\thesis\RTL\attempt1\parametersSiFH.vh|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v|
-Z14 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v|
+Z14 !s108 1638911524.000000
+Z15 !s107 D:\OneDrive - Delft University of Technology\thesis\RTL\attempt1\parametersSiFH.vh|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v|
+Z16 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilder.v|
 !i113 0
 R9
 R2
 nde@mux
 vDF
-Z15 !s110 1638890939
+R4
 !i10b 1
 !s100 5^V659:I_KK0Om5Jz?O[C1
 IIK]P_Znzh?i]i56PGBXDk1
@@ -119,7 +118,7 @@ R7
 r1
 !s85 0
 31
-Z16 !s108 1638890939.000000
+R8
 !s107 D:\OneDrive - Delft University of Technology\thesis\RTL\attempt1\parametersSiFH.vh|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/DF.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/DF.v|
 !i113 0
@@ -127,35 +126,57 @@ R9
 R2
 n@d@f
 vhisBuilder
-R4
+R10
 !i10b 1
 !s100 ?l1>jPhch89e_BUhX8bLd2
 I]3NT]ckJkTCUd0A^iL^Th2
 R5
 R6
-R10
 R11
 R12
+R13
 L0 91
 R7
 r1
 !s85 0
 31
-R8
-R13
 R14
+R15
+R16
 !i113 0
 R9
 R2
 nhis@builder
-vhisBuilderReg
-!s110 1638883260
+vhisBuilderFSM
+R4
 !i10b 1
-!s100 2:BhFT=Y@IUOF51e;Z]BI3
-IDYi5L=QRTDE[A_Y90^D[?2
+!s100 U4Jh=^1`oW9R678>1YZZ;2
+IFJKXziBnEeGdlJ?bf[63^2
 R5
 R6
-w1638883187
+w1638971642
+8D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderFSM.v
+FD:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderFSM.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:\OneDrive - Delft University of Technology\thesis\RTL\attempt1\parametersSiFH.vh|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderFSM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderFSM.v|
+!i113 0
+R9
+R2
+nhis@builder@f@s@m
+vhisBuilderReg
+!s110 1638955671
+!i10b 1
+!s100 X13X9B9]zURSUBHG:]B7h0
+IKGQ0?;OHBT3lTOce`AZT31
+R5
+R6
+w1638912082
 8D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderReg.v
 FD:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderReg.v
 L0 6
@@ -163,7 +184,7 @@ R7
 r1
 !s85 0
 31
-!s108 1638883260.000000
+!s108 1638955671.000000
 !s107 D:\OneDrive - Delft University of Technology\thesis\RTL\attempt1\parametersSiFH.vh|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderReg.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderReg.v|
 !i113 0
@@ -171,13 +192,13 @@ R9
 R2
 nhis@builder@reg
 vhisBuilderTB
-R15
+R4
 !i10b 1
-!s100 k6Z3UA8OY3_?5:99CdBlh0
-IhmMS0:IP2UD`cJ?45jN^L3
+!s100 gX`S71oXaaIWnFjRhR[nj0
+IbdAEHmInb;<i2jA?KzEYP1
 R5
 R6
-w1638887808
+w1638969802
 8D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderTB.v
 FD:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderTB.v
 L0 4
@@ -185,7 +206,7 @@ R7
 r1
 !s85 0
 31
-R16
+R8
 !s107 D:\OneDrive - Delft University of Technology\thesis\RTL\attempt1\parametersSiFH.vh|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderTB.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderTB.v|
 !i113 0
@@ -193,45 +214,45 @@ R9
 R2
 nhis@builder@t@b
 vmemReset
-R4
+R10
 !i10b 1
 !s100 [DVoZdWD5E>CMac@i1]@L2
 IF1VJefgo^2R65DIO3cRPB1
 R5
 R6
-R10
 R11
 R12
+R13
 L0 48
 R7
 r1
 !s85 0
 31
-R8
-R13
 R14
+R15
+R16
 !i113 0
 R9
 R2
 nmem@reset
 vMux
-R4
+R10
 !i10b 1
 !s100 ;=K[T2QgG?f<?AA>ad@bg3
 I6K@IENEH;J6oDMILhZaLB1
 R5
 R6
-R10
 R11
 R12
+R13
 L0 35
 R7
 r1
 !s85 0
 31
-R8
-R13
 R14
+R15
+R16
 !i113 0
 R9
 R2
@@ -259,7 +280,7 @@ R9
 R2
 npeak@detecter
 vpeakDetecterTB
-R15
+R4
 !i10b 1
 !s100 UFgRRe9=LgZ0QQb6Wiln81
 IC<LfK^LUFRM1m49QIS;V[0
@@ -273,7 +294,7 @@ R7
 r1
 !s85 0
 31
-R16
+R8
 !s107 D:\OneDrive - Delft University of Technology\thesis\RTL\attempt1\parametersSiFH.vh|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/peakDetecterTB.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/peakDetecterTB.v|
 !i113 0
@@ -281,23 +302,23 @@ R9
 R2
 npeak@detecter@t@b
 vsrLatch
-R4
+!s110 1638911644
 !i10b 1
 !s100 z@RSdMP@ZYL]JNElU:6DE2
 Im87Hc`V`:PckoDlm?=IU43
 R5
 R6
-R10
 R11
 R12
+R13
 L0 5
 R7
 r1
 !s85 0
 31
-R8
-R13
-R14
+!s108 1638911644.000000
+R15
+R16
 !i113 0
 R9
 R2
