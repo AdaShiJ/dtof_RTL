@@ -21,7 +21,6 @@ reg peakDonee;
 
 always @(posedge peakDone) begin
     peakDonee <= peakDone;
-    peakFlag = peakDone & (~peakDonee);
 end
 always @(*) begin
     upperBound = ~0;
@@ -48,18 +47,12 @@ always @(*) begin
         end
     end
 
-    if (peakFlag) begin
+    if (peakDonee) begin
         THminus = TTHminus;//[`Np:`Np-`Nb+1];
         THpositive = TTHpositive;//[`Np:`Np-`Nb+1];
         delta = THminus + THpositive - (THpositive >> `Nb) << `Nb ;
         algebraicReady = algebraicReadyy;   
     end
-    // else begin
-    //     THminus = TTHminus;//[`Np:`Np-`Nb+1];
-    //     THpositive = TTHpositive;//[`Np:`Np-`Nb+1];
-    //     delta = THminus + THpositive - (THpositive >> `Nb) << `Nb ;
-    //     algebraicReady = algebraicReadyy;  
-    // end
 
 end
     

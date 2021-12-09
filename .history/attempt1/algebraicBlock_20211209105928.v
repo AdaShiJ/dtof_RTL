@@ -54,12 +54,6 @@ always @(*) begin
         delta = THminus + THpositive - (THpositive >> `Nb) << `Nb ;
         algebraicReady = algebraicReadyy;   
     end
-    // else begin
-    //     THminus = TTHminus;//[`Np:`Np-`Nb+1];
-    //     THpositive = TTHpositive;//[`Np:`Np-`Nb+1];
-    //     delta = THminus + THpositive - (THpositive >> `Nb) << `Nb ;
-    //     algebraicReady = algebraicReadyy;  
-    // end
 
 end
     

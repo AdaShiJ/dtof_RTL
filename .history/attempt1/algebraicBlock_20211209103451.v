@@ -17,16 +17,11 @@ reg [`Np:1] CH;
 reg [`Np:1] upperBound;
 reg [`Nb:1] upperBoundCH;
 reg algebraicReadyy;
-reg peakDonee;
 
-always @(posedge peakDone) begin
-    peakDonee <= peakDone;
-    peakFlag = peakDone & (~peakDonee);
-end
 always @(*) begin
     upperBound = ~0;
     upperBoundCH = ~0;
-    SB = (1'b1 << (`Nb - 1)) + (1'b1 << (`Nb - 2)); //use the middle value of bin
+    SB = 1'b1 << (`Nb - 1);// + 1'b1 << (`Nb - 2); //use the middle value of bin
     CH = peakCH << (`Np - `Nb);
     TTHminus = CH - SB;//bound
     TTHpositive = CH + SB;//bound
@@ -48,18 +43,12 @@ always @(*) begin
         end
     end
 
-    if (peakFlag) begin
+    if (peakDone) begin
         THminus = TTHminus;//[`Np:`Np-`Nb+1];
         THpositive = TTHpositive;//[`Np:`Np-`Nb+1];
         delta = THminus + THpositive - (THpositive >> `Nb) << `Nb ;
         algebraicReady = algebraicReadyy;   
     end
-    // else begin
-    //     THminus = TTHminus;//[`Np:`Np-`Nb+1];
-    //     THpositive = TTHpositive;//[`Np:`Np-`Nb+1];
-    //     delta = THminus + THpositive - (THpositive >> `Nb) << `Nb ;
-    //     algebraicReady = algebraicReadyy;  
-    // end
 
 end
     
