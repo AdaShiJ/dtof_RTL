@@ -8,19 +8,13 @@ vlog -reportprogress 300 -work work -vopt D:/OneDrive - Delft University of Tech
 End time: 15:55:06 on Dec 07,2021, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
-} {} {}} {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderTB.v} {1 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderTB.v}
+} {} {}} {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderTB.v} {2 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderTB.v}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module hisBuilderTB
+** Warning: D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderTB.v(43): (vlog-2697) End index of part-select into 'result' is out of bounds.
 
 Top level modules:
 	hisBuilderTB
-
-} {} {}} {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderFSM.v} {1 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderFSM.v}
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module hisBuilderFSM
-
-Top level modules:
-	hisBuilderFSM
 
 } {} {}} {{D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderReg.v}} {0 {vlog -work work -vopt {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/hisBuilderReg.v}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -59,13 +53,6 @@ Top level modules:
 	hisBuilderTB
 End time: 15:55:07 on Dec 07,2021, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
-
-} {} {}} {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/DF.v} {1 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/DF.v}
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module DF
-
-Top level modules:
-	DF
 
 } {} {}} {{D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/algebraicBlock.v}} {1 {vlog -work work -vopt {D:/OneDrive - Delft University of Technology/thesis/RTL/attempt1/algebraicBlock.v}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
