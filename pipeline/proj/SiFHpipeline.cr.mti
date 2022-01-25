@@ -1,16 +1,16 @@
-{D:/OneDrive - Delft University of Technology/thesis/RTL/pipeline/hisBuilderFSM.v} {1 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/pipeline/hisBuilderFSM.v}
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module hisBuilderFSM
-
-Top level modules:
-	hisBuilderFSM
-
-} {} {}} {D:/OneDrive - Delft University of Technology/thesis/RTL/pipeline/hisBuilderTB.v} {1 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/pipeline/hisBuilderTB.v}
+{D:/OneDrive - Delft University of Technology/thesis/RTL/pipeline/hisBuilderTB.v} {1 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/pipeline/hisBuilderTB.v}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module hisBuilderTB
 
 Top level modules:
 	hisBuilderTB
+
+} {} {}} {D:/OneDrive - Delft University of Technology/thesis/RTL/pipeline/hisBuilderFSM.v} {1 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/pipeline/hisBuilderFSM.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module hisBuilderFSM
+
+Top level modules:
+	hisBuilderFSM
 
 } {} {}} {D:/OneDrive - Delft University of Technology/thesis/RTL/pipeline/parametersSiFH.vh} {1 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/pipeline/parametersSiFH.vh}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016

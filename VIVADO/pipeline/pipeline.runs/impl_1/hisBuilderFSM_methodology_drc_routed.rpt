@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Dec 20 08:40:22 2021
+| Date         : Wed Jan 12 17:49:43 2022
 | Host         : panther running 64-bit major release  (build 9200)
 | Command      : report_methodology -file hisBuilderFSM_methodology_drc_routed.rpt -pb hisBuilderFSM_methodology_drc_routed.pb -rpx hisBuilderFSM_methodology_drc_routed.rpx
 | Design       : hisBuilderFSM
@@ -23,190 +23,345 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 1056
+             Violations found: 1129
 +-----------+----------+------------------------------+------------+
 | Rule      | Severity | Description                  | Violations |
 +-----------+----------+------------------------------+------------+
-| LUTAR-1   | Warning  | LUT drives async reset alert | 35         |
+| LUTAR-1   | Warning  | LUT drives async reset alert | 66         |
 | TIMING-17 | Warning  | Non-clocked sequential cell  | 1000       |
-| TIMING-20 | Warning  | Non-clocked latch            | 21         |
+| TIMING-20 | Warning  | Non-clocked latch            | 63         |
 +-----------+----------+------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell BRAM[111][10]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][2]/CLR, BRAM_reg[100][3]/CLR, BRAM_reg[100][4]/CLR, BRAM_reg[100][5]/CLR, BRAM_reg[100][6]/CLR, BRAM_reg[100][7]/CLR, BRAM_reg[100][8]/CLR, BRAM_reg[100][9]/CLR, BRAM_reg[101][2]/CLR, BRAM_reg[101][3]/CLR, BRAM_reg[101][4]/CLR, BRAM_reg[101][5]/CLR, BRAM_reg[101][6]/CLR, BRAM_reg[101][7]/CLR, BRAM_reg[101][8]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][10]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][10]/CLR, BRAM_reg[101][10]/CLR, BRAM_reg[102][10]/CLR, BRAM_reg[103][10]/CLR, BRAM_reg[104][10]/CLR, BRAM_reg[105][10]/CLR, BRAM_reg[106][10]/CLR, BRAM_reg[107][10]/CLR, BRAM_reg[108][10]/CLR, BRAM_reg[109][10]/CLR, BRAM_reg[110][10]/CLR, BRAM_reg[111][10]/CLR, BRAM_reg[112][10]/CLR, BRAM_reg[113][10]/CLR, BRAM_reg[114][10]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#2 Warning
 LUT drives async reset alert  
-LUT cell BRAM[111][18]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][10]/CLR, BRAM_reg[100][11]/CLR, BRAM_reg[100][12]/CLR, BRAM_reg[100][13]/CLR, BRAM_reg[100][14]/CLR, BRAM_reg[100][15]/CLR, BRAM_reg[100][16]/CLR, BRAM_reg[100][17]/CLR, BRAM_reg[101][10]/CLR, BRAM_reg[101][11]/CLR, BRAM_reg[101][12]/CLR, BRAM_reg[101][13]/CLR, BRAM_reg[101][14]/CLR, BRAM_reg[101][15]/CLR, BRAM_reg[101][16]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][11]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][11]/CLR, BRAM_reg[101][11]/CLR, BRAM_reg[102][11]/CLR, BRAM_reg[103][11]/CLR, BRAM_reg[104][11]/CLR, BRAM_reg[105][11]/CLR, BRAM_reg[106][11]/CLR, BRAM_reg[107][11]/CLR, BRAM_reg[108][11]/CLR, BRAM_reg[109][11]/CLR, BRAM_reg[110][11]/CLR, BRAM_reg[111][11]/CLR, BRAM_reg[112][11]/CLR, BRAM_reg[113][11]/CLR, BRAM_reg[114][11]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#3 Warning
 LUT drives async reset alert  
-LUT cell BRAM[111][20]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][18]/CLR, BRAM_reg[100][19]/CLR, BRAM_reg[100][20]/CLR, BRAM_reg[101][18]/CLR, BRAM_reg[101][19]/CLR, BRAM_reg[101][20]/CLR, BRAM_reg[102][18]/CLR, BRAM_reg[102][19]/CLR, BRAM_reg[102][20]/CLR, BRAM_reg[103][18]/CLR, BRAM_reg[103][19]/CLR, BRAM_reg[103][20]/CLR, BRAM_reg[104][18]/CLR, BRAM_reg[104][19]/CLR, BRAM_reg[104][20]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][12]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][12]/CLR, BRAM_reg[101][12]/CLR, BRAM_reg[102][12]/CLR, BRAM_reg[103][12]/CLR, BRAM_reg[104][12]/CLR, BRAM_reg[105][12]/CLR, BRAM_reg[106][12]/CLR, BRAM_reg[107][12]/CLR, BRAM_reg[108][12]/CLR, BRAM_reg[109][12]/CLR, BRAM_reg[110][12]/CLR, BRAM_reg[111][12]/CLR, BRAM_reg[112][12]/CLR, BRAM_reg[113][12]/CLR, BRAM_reg[114][12]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#4 Warning
 LUT drives async reset alert  
-LUT cell BRAM[127][14]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[112][10]/CLR, BRAM_reg[112][11]/CLR, BRAM_reg[112][12]/CLR, BRAM_reg[112][13]/CLR, BRAM_reg[112][6]/CLR, BRAM_reg[112][7]/CLR, BRAM_reg[112][8]/CLR, BRAM_reg[112][9]/CLR, BRAM_reg[113][10]/CLR, BRAM_reg[113][11]/CLR, BRAM_reg[113][12]/CLR, BRAM_reg[113][13]/CLR, BRAM_reg[113][6]/CLR, BRAM_reg[113][7]/CLR, BRAM_reg[113][8]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][13]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][13]/CLR, BRAM_reg[101][13]/CLR, BRAM_reg[102][13]/CLR, BRAM_reg[103][13]/CLR, BRAM_reg[104][13]/CLR, BRAM_reg[105][13]/CLR, BRAM_reg[106][13]/CLR, BRAM_reg[107][13]/CLR, BRAM_reg[108][13]/CLR, BRAM_reg[109][13]/CLR, BRAM_reg[110][13]/CLR, BRAM_reg[111][13]/CLR, BRAM_reg[112][13]/CLR, BRAM_reg[113][13]/CLR, BRAM_reg[114][13]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#5 Warning
 LUT drives async reset alert  
-LUT cell BRAM[127][20]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][1]/CLR, BRAM_reg[101][1]/CLR, BRAM_reg[102][1]/CLR, BRAM_reg[103][1]/CLR, BRAM_reg[104][1]/CLR, BRAM_reg[105][1]/CLR, BRAM_reg[105][2]/CLR, BRAM_reg[106][1]/CLR, BRAM_reg[106][2]/CLR, BRAM_reg[107][1]/CLR, BRAM_reg[107][2]/CLR, BRAM_reg[108][1]/CLR, BRAM_reg[108][2]/CLR, BRAM_reg[109][1]/CLR, BRAM_reg[109][2]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][14]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][14]/CLR, BRAM_reg[101][14]/CLR, BRAM_reg[102][14]/CLR, BRAM_reg[103][14]/CLR, BRAM_reg[104][14]/CLR, BRAM_reg[105][14]/CLR, BRAM_reg[106][14]/CLR, BRAM_reg[107][14]/CLR, BRAM_reg[108][14]/CLR, BRAM_reg[109][14]/CLR, BRAM_reg[110][14]/CLR, BRAM_reg[111][14]/CLR, BRAM_reg[112][14]/CLR, BRAM_reg[113][14]/CLR, BRAM_reg[114][14]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#6 Warning
 LUT drives async reset alert  
-LUT cell BRAM[127][6]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[112][1]/CLR, BRAM_reg[112][2]/CLR, BRAM_reg[112][3]/CLR, BRAM_reg[112][4]/CLR, BRAM_reg[112][5]/CLR, BRAM_reg[113][1]/CLR, BRAM_reg[113][2]/CLR, BRAM_reg[113][3]/CLR, BRAM_reg[113][4]/CLR, BRAM_reg[113][5]/CLR, BRAM_reg[114][1]/CLR, BRAM_reg[114][2]/CLR, BRAM_reg[114][3]/CLR, BRAM_reg[114][4]/CLR, BRAM_reg[114][5]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][15]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][15]/CLR, BRAM_reg[101][15]/CLR, BRAM_reg[102][15]/CLR, BRAM_reg[103][15]/CLR, BRAM_reg[104][15]/CLR, BRAM_reg[105][15]/CLR, BRAM_reg[106][15]/CLR, BRAM_reg[107][15]/CLR, BRAM_reg[108][15]/CLR, BRAM_reg[109][15]/CLR, BRAM_reg[110][15]/CLR, BRAM_reg[111][15]/CLR, BRAM_reg[112][15]/CLR, BRAM_reg[113][15]/CLR, BRAM_reg[114][15]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#7 Warning
 LUT drives async reset alert  
-LUT cell BRAM[143][16]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][10]/CLR, BRAM_reg[128][11]/CLR, BRAM_reg[128][12]/CLR, BRAM_reg[128][13]/CLR, BRAM_reg[128][14]/CLR, BRAM_reg[128][15]/CLR, BRAM_reg[128][8]/CLR, BRAM_reg[128][9]/CLR, BRAM_reg[129][10]/CLR, BRAM_reg[129][11]/CLR, BRAM_reg[129][12]/CLR, BRAM_reg[129][13]/CLR, BRAM_reg[129][14]/CLR, BRAM_reg[129][15]/CLR, BRAM_reg[129][8]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][16]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][16]/CLR, BRAM_reg[101][16]/CLR, BRAM_reg[102][16]/CLR, BRAM_reg[103][16]/CLR, BRAM_reg[104][16]/CLR, BRAM_reg[105][16]/CLR, BRAM_reg[106][16]/CLR, BRAM_reg[107][16]/CLR, BRAM_reg[108][16]/CLR, BRAM_reg[109][16]/CLR, BRAM_reg[110][16]/CLR, BRAM_reg[111][16]/CLR, BRAM_reg[112][16]/CLR, BRAM_reg[113][16]/CLR, BRAM_reg[114][16]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#8 Warning
 LUT drives async reset alert  
-LUT cell BRAM[159][0]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][0]/CLR, BRAM_reg[129][0]/CLR, BRAM_reg[130][0]/CLR, BRAM_reg[131][0]/CLR, BRAM_reg[132][0]/CLR, BRAM_reg[133][0]/CLR, BRAM_reg[134][0]/CLR, BRAM_reg[135][0]/CLR, BRAM_reg[136][0]/CLR, BRAM_reg[137][0]/CLR, BRAM_reg[138][0]/CLR, BRAM_reg[139][0]/CLR, BRAM_reg[140][0]/CLR, BRAM_reg[141][0]/CLR, BRAM_reg[142][0]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][17]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][17]/CLR, BRAM_reg[101][17]/CLR, BRAM_reg[102][17]/CLR, BRAM_reg[103][17]/CLR, BRAM_reg[104][17]/CLR, BRAM_reg[105][17]/CLR, BRAM_reg[106][17]/CLR, BRAM_reg[107][17]/CLR, BRAM_reg[108][17]/CLR, BRAM_reg[109][17]/CLR, BRAM_reg[110][17]/CLR, BRAM_reg[111][17]/CLR, BRAM_reg[112][17]/CLR, BRAM_reg[113][17]/CLR, BRAM_reg[114][17]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#9 Warning
 LUT drives async reset alert  
-LUT cell BRAM[159][11]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[144][10]/CLR, BRAM_reg[144][4]/CLR, BRAM_reg[144][5]/CLR, BRAM_reg[144][6]/CLR, BRAM_reg[144][7]/CLR, BRAM_reg[144][8]/CLR, BRAM_reg[144][9]/CLR, BRAM_reg[145][10]/CLR, BRAM_reg[145][4]/CLR, BRAM_reg[145][5]/CLR, BRAM_reg[145][6]/CLR, BRAM_reg[145][7]/CLR, BRAM_reg[145][8]/CLR, BRAM_reg[145][9]/CLR, BRAM_reg[146][10]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][18]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][18]/CLR, BRAM_reg[101][18]/CLR, BRAM_reg[102][18]/CLR, BRAM_reg[103][18]/CLR, BRAM_reg[104][18]/CLR, BRAM_reg[105][18]/CLR, BRAM_reg[106][18]/CLR, BRAM_reg[107][18]/CLR, BRAM_reg[108][18]/CLR, BRAM_reg[109][18]/CLR, BRAM_reg[110][18]/CLR, BRAM_reg[111][18]/CLR, BRAM_reg[112][18]/CLR, BRAM_reg[113][18]/CLR, BRAM_reg[114][18]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#10 Warning
 LUT drives async reset alert  
-LUT cell BRAM[159][19]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[144][11]/CLR, BRAM_reg[144][12]/CLR, BRAM_reg[144][13]/CLR, BRAM_reg[144][14]/CLR, BRAM_reg[144][15]/CLR, BRAM_reg[144][16]/CLR, BRAM_reg[144][17]/CLR, BRAM_reg[144][18]/CLR, BRAM_reg[145][11]/CLR, BRAM_reg[145][12]/CLR, BRAM_reg[145][13]/CLR, BRAM_reg[145][14]/CLR, BRAM_reg[145][15]/CLR, BRAM_reg[145][16]/CLR, BRAM_reg[145][17]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][19]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][19]/CLR, BRAM_reg[101][19]/CLR, BRAM_reg[102][19]/CLR, BRAM_reg[103][19]/CLR, BRAM_reg[104][19]/CLR, BRAM_reg[105][19]/CLR, BRAM_reg[106][19]/CLR, BRAM_reg[107][19]/CLR, BRAM_reg[108][19]/CLR, BRAM_reg[109][19]/CLR, BRAM_reg[110][19]/CLR, BRAM_reg[111][19]/CLR, BRAM_reg[112][19]/CLR, BRAM_reg[113][19]/CLR, BRAM_reg[114][19]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#11 Warning
 LUT drives async reset alert  
-LUT cell BRAM[159][20]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[144][19]/CLR, BRAM_reg[144][20]/CLR, BRAM_reg[145][19]/CLR, BRAM_reg[145][20]/CLR, BRAM_reg[146][19]/CLR, BRAM_reg[146][20]/CLR, BRAM_reg[147][19]/CLR, BRAM_reg[147][20]/CLR, BRAM_reg[148][19]/CLR, BRAM_reg[148][20]/CLR, BRAM_reg[149][19]/CLR, BRAM_reg[149][20]/CLR, BRAM_reg[150][20]/CLR, BRAM_reg[151][20]/CLR, BRAM_reg[152][20]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][1]/CLR, BRAM_reg[101][1]/CLR, BRAM_reg[102][1]/CLR, BRAM_reg[103][1]/CLR, BRAM_reg[104][1]/CLR, BRAM_reg[105][1]/CLR, BRAM_reg[106][1]/CLR, BRAM_reg[107][1]/CLR, BRAM_reg[108][1]/CLR, BRAM_reg[109][1]/CLR, BRAM_reg[110][1]/CLR, BRAM_reg[111][1]/CLR, BRAM_reg[112][1]/CLR, BRAM_reg[113][1]/CLR, BRAM_reg[114][1]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#12 Warning
 LUT drives async reset alert  
-LUT cell BRAM[159][3]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][16]/CLR, BRAM_reg[128][17]/CLR, BRAM_reg[128][18]/CLR, BRAM_reg[128][19]/CLR, BRAM_reg[128][20]/CLR, BRAM_reg[129][16]/CLR, BRAM_reg[129][17]/CLR, BRAM_reg[129][18]/CLR, BRAM_reg[129][19]/CLR, BRAM_reg[129][20]/CLR, BRAM_reg[130][16]/CLR, BRAM_reg[130][17]/CLR, BRAM_reg[130][18]/CLR, BRAM_reg[130][19]/CLR, BRAM_reg[130][20]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][20]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][20]/CLR, BRAM_reg[101][20]/CLR, BRAM_reg[102][20]/CLR, BRAM_reg[103][20]/CLR, BRAM_reg[104][20]/CLR, BRAM_reg[105][20]/CLR, BRAM_reg[106][20]/CLR, BRAM_reg[107][20]/CLR, BRAM_reg[108][20]/CLR, BRAM_reg[109][20]/CLR, BRAM_reg[110][20]/CLR, BRAM_reg[111][20]/CLR, BRAM_reg[112][20]/CLR, BRAM_reg[113][20]/CLR, BRAM_reg[114][20]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#13 Warning
 LUT drives async reset alert  
-LUT cell BRAM[15][16]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][10]/CLR, BRAM_reg[0][11]/CLR, BRAM_reg[0][12]/CLR, BRAM_reg[0][13]/CLR, BRAM_reg[0][14]/CLR, BRAM_reg[0][15]/CLR, BRAM_reg[0][16]/CLR, BRAM_reg[0][9]/CLR, BRAM_reg[10][10]/CLR, BRAM_reg[10][11]/CLR, BRAM_reg[10][12]/CLR, BRAM_reg[10][13]/CLR, BRAM_reg[10][14]/CLR, BRAM_reg[10][15]/CLR, BRAM_reg[10][16]/CLR (the first 15 of 128 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][2]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][2]/CLR, BRAM_reg[101][2]/CLR, BRAM_reg[102][2]/CLR, BRAM_reg[103][2]/CLR, BRAM_reg[104][2]/CLR, BRAM_reg[105][2]/CLR, BRAM_reg[106][2]/CLR, BRAM_reg[107][2]/CLR, BRAM_reg[108][2]/CLR, BRAM_reg[109][2]/CLR, BRAM_reg[110][2]/CLR, BRAM_reg[111][2]/CLR, BRAM_reg[112][2]/CLR, BRAM_reg[113][2]/CLR, BRAM_reg[114][2]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#14 Warning
 LUT drives async reset alert  
-LUT cell BRAM[15][20]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][17]/CLR, BRAM_reg[0][18]/CLR, BRAM_reg[0][19]/CLR, BRAM_reg[0][20]/CLR, BRAM_reg[10][17]/CLR, BRAM_reg[10][18]/CLR, BRAM_reg[10][19]/CLR, BRAM_reg[10][20]/CLR, BRAM_reg[11][17]/CLR, BRAM_reg[11][18]/CLR, BRAM_reg[11][19]/CLR, BRAM_reg[11][20]/CLR, BRAM_reg[12][17]/CLR, BRAM_reg[12][18]/CLR, BRAM_reg[12][19]/CLR (the first 15 of 74 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][3]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][3]/CLR, BRAM_reg[101][3]/CLR, BRAM_reg[102][3]/CLR, BRAM_reg[103][3]/CLR, BRAM_reg[104][3]/CLR, BRAM_reg[105][3]/CLR, BRAM_reg[106][3]/CLR, BRAM_reg[107][3]/CLR, BRAM_reg[108][3]/CLR, BRAM_reg[109][3]/CLR, BRAM_reg[110][3]/CLR, BRAM_reg[111][3]/CLR, BRAM_reg[112][3]/CLR, BRAM_reg[113][3]/CLR, BRAM_reg[114][3]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#15 Warning
 LUT drives async reset alert  
-LUT cell BRAM[15][8]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][1]/CLR, BRAM_reg[0][2]/CLR, BRAM_reg[0][3]/CLR, BRAM_reg[0][4]/CLR, BRAM_reg[0][5]/CLR, BRAM_reg[0][6]/CLR, BRAM_reg[0][7]/CLR, BRAM_reg[0][8]/CLR, BRAM_reg[10][1]/CLR, BRAM_reg[10][2]/CLR, BRAM_reg[10][3]/CLR, BRAM_reg[10][4]/CLR, BRAM_reg[10][5]/CLR, BRAM_reg[10][6]/CLR, BRAM_reg[10][7]/CLR (the first 15 of 128 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][4]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][4]/CLR, BRAM_reg[101][4]/CLR, BRAM_reg[102][4]/CLR, BRAM_reg[103][4]/CLR, BRAM_reg[104][4]/CLR, BRAM_reg[105][4]/CLR, BRAM_reg[106][4]/CLR, BRAM_reg[107][4]/CLR, BRAM_reg[108][4]/CLR, BRAM_reg[109][4]/CLR, BRAM_reg[110][4]/CLR, BRAM_reg[111][4]/CLR, BRAM_reg[112][4]/CLR, BRAM_reg[113][4]/CLR, BRAM_reg[114][4]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#16 Warning
 LUT drives async reset alert  
-LUT cell BRAM[166][20]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][1]/CLR, BRAM_reg[128][2]/CLR, BRAM_reg[128][3]/CLR, BRAM_reg[128][4]/CLR, BRAM_reg[128][5]/CLR, BRAM_reg[128][6]/CLR, BRAM_reg[128][7]/CLR, BRAM_reg[129][1]/CLR, BRAM_reg[129][2]/CLR, BRAM_reg[129][3]/CLR, BRAM_reg[129][4]/CLR, BRAM_reg[129][5]/CLR, BRAM_reg[129][6]/CLR, BRAM_reg[129][7]/CLR, BRAM_reg[130][1]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][5]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][5]/CLR, BRAM_reg[101][5]/CLR, BRAM_reg[102][5]/CLR, BRAM_reg[103][5]/CLR, BRAM_reg[104][5]/CLR, BRAM_reg[105][5]/CLR, BRAM_reg[106][5]/CLR, BRAM_reg[107][5]/CLR, BRAM_reg[108][5]/CLR, BRAM_reg[109][5]/CLR, BRAM_reg[110][5]/CLR, BRAM_reg[111][5]/CLR, BRAM_reg[112][5]/CLR, BRAM_reg[113][5]/CLR, BRAM_reg[114][5]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#17 Warning
 LUT drives async reset alert  
-LUT cell BRAM[175][12]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[160][10]/CLR, BRAM_reg[160][11]/CLR, BRAM_reg[160][4]/CLR, BRAM_reg[160][5]/CLR, BRAM_reg[160][6]/CLR, BRAM_reg[160][7]/CLR, BRAM_reg[160][8]/CLR, BRAM_reg[160][9]/CLR, BRAM_reg[161][10]/CLR, BRAM_reg[161][11]/CLR, BRAM_reg[161][5]/CLR, BRAM_reg[161][6]/CLR, BRAM_reg[161][7]/CLR, BRAM_reg[161][8]/CLR, BRAM_reg[161][9]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][6]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][6]/CLR, BRAM_reg[101][6]/CLR, BRAM_reg[102][6]/CLR, BRAM_reg[103][6]/CLR, BRAM_reg[104][6]/CLR, BRAM_reg[105][6]/CLR, BRAM_reg[106][6]/CLR, BRAM_reg[107][6]/CLR, BRAM_reg[108][6]/CLR, BRAM_reg[109][6]/CLR, BRAM_reg[110][6]/CLR, BRAM_reg[111][6]/CLR, BRAM_reg[112][6]/CLR, BRAM_reg[113][6]/CLR, BRAM_reg[114][6]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#18 Warning
 LUT drives async reset alert  
-LUT cell BRAM[175][20]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[160][12]/CLR, BRAM_reg[160][13]/CLR, BRAM_reg[160][14]/CLR, BRAM_reg[160][15]/CLR, BRAM_reg[160][16]/CLR, BRAM_reg[160][17]/CLR, BRAM_reg[160][18]/CLR, BRAM_reg[160][19]/CLR, BRAM_reg[161][12]/CLR, BRAM_reg[161][13]/CLR, BRAM_reg[161][14]/CLR, BRAM_reg[161][15]/CLR, BRAM_reg[161][16]/CLR, BRAM_reg[161][17]/CLR, BRAM_reg[161][18]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][7]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][7]/CLR, BRAM_reg[101][7]/CLR, BRAM_reg[102][7]/CLR, BRAM_reg[103][7]/CLR, BRAM_reg[104][7]/CLR, BRAM_reg[105][7]/CLR, BRAM_reg[106][7]/CLR, BRAM_reg[107][7]/CLR, BRAM_reg[108][7]/CLR, BRAM_reg[109][7]/CLR, BRAM_reg[110][7]/CLR, BRAM_reg[111][7]/CLR, BRAM_reg[112][7]/CLR, BRAM_reg[113][7]/CLR, BRAM_reg[114][7]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#19 Warning
 LUT drives async reset alert  
-LUT cell BRAM[191][0]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][0]/CLR, BRAM_reg[100][0]/CLR, BRAM_reg[101][0]/CLR, BRAM_reg[102][0]/CLR, BRAM_reg[103][0]/CLR, BRAM_reg[104][0]/CLR, BRAM_reg[105][0]/CLR, BRAM_reg[106][0]/CLR, BRAM_reg[107][0]/CLR, BRAM_reg[108][0]/CLR, BRAM_reg[109][0]/CLR, BRAM_reg[10][0]/CLR, BRAM_reg[110][0]/CLR, BRAM_reg[111][0]/CLR, BRAM_reg[112][0]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][8]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][8]/CLR, BRAM_reg[101][8]/CLR, BRAM_reg[102][8]/CLR, BRAM_reg[103][8]/CLR, BRAM_reg[104][8]/CLR, BRAM_reg[105][8]/CLR, BRAM_reg[106][8]/CLR, BRAM_reg[107][8]/CLR, BRAM_reg[108][8]/CLR, BRAM_reg[109][8]/CLR, BRAM_reg[110][8]/CLR, BRAM_reg[111][8]/CLR, BRAM_reg[112][8]/CLR, BRAM_reg[113][8]/CLR, BRAM_reg[114][8]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#20 Warning
 LUT drives async reset alert  
-LUT cell BRAM[191][17]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[176][10]/CLR, BRAM_reg[176][11]/CLR, BRAM_reg[176][12]/CLR, BRAM_reg[176][13]/CLR, BRAM_reg[176][14]/CLR, BRAM_reg[176][15]/CLR, BRAM_reg[176][16]/CLR, BRAM_reg[176][9]/CLR, BRAM_reg[177][10]/CLR, BRAM_reg[177][11]/CLR, BRAM_reg[177][12]/CLR, BRAM_reg[177][13]/CLR, BRAM_reg[177][14]/CLR, BRAM_reg[177][15]/CLR, BRAM_reg[177][16]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[127][9]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[100][9]/CLR, BRAM_reg[101][9]/CLR, BRAM_reg[102][9]/CLR, BRAM_reg[103][9]/CLR, BRAM_reg[104][9]/CLR, BRAM_reg[105][9]/CLR, BRAM_reg[106][9]/CLR, BRAM_reg[107][9]/CLR, BRAM_reg[108][9]/CLR, BRAM_reg[109][9]/CLR, BRAM_reg[110][9]/CLR, BRAM_reg[111][9]/CLR, BRAM_reg[112][9]/CLR, BRAM_reg[113][9]/CLR, BRAM_reg[114][9]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#21 Warning
 LUT drives async reset alert  
-LUT cell BRAM[191][1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[184][1]/CLR, BRAM_reg[185][1]/CLR, BRAM_reg[186][1]/CLR, BRAM_reg[187][1]/CLR, BRAM_reg[188][1]/CLR, BRAM_reg[189][1]/CLR, BRAM_reg[190][1]/CLR, BRAM_reg[191][1]/CLR, BRAM_reg[64][13]/CLR, BRAM_reg[64][14]/CLR, BRAM_reg[64][15]/CLR, BRAM_reg[64][16]/CLR, BRAM_reg[64][17]/CLR, BRAM_reg[64][18]/CLR, BRAM_reg[64][19]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[191][0]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[110][0]/CLR, BRAM_reg[111][0]/CLR, BRAM_reg[128][0]/CLR, BRAM_reg[129][0]/CLR, BRAM_reg[130][0]/CLR, BRAM_reg[131][0]/CLR, BRAM_reg[132][0]/CLR, BRAM_reg[133][0]/CLR, BRAM_reg[134][0]/CLR, BRAM_reg[135][0]/CLR, BRAM_reg[136][0]/CLR, BRAM_reg[137][0]/CLR, BRAM_reg[138][0]/CLR, BRAM_reg[139][0]/CLR, BRAM_reg[140][0]/CLR (the first 15 of 100 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#22 Warning
 LUT drives async reset alert  
-LUT cell BRAM[191][20]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[160][1]/CLR, BRAM_reg[160][2]/CLR, BRAM_reg[160][3]/CLR, BRAM_reg[161][1]/CLR, BRAM_reg[161][2]/CLR, BRAM_reg[161][3]/CLR, BRAM_reg[161][4]/CLR, BRAM_reg[162][1]/CLR, BRAM_reg[162][2]/CLR, BRAM_reg[162][3]/CLR, BRAM_reg[162][4]/CLR, BRAM_reg[163][1]/CLR, BRAM_reg[163][2]/CLR, BRAM_reg[163][3]/CLR, BRAM_reg[163][4]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[191][10]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][10]/CLR, BRAM_reg[129][10]/CLR, BRAM_reg[130][10]/CLR, BRAM_reg[131][10]/CLR, BRAM_reg[132][10]/CLR, BRAM_reg[133][10]/CLR, BRAM_reg[134][10]/CLR, BRAM_reg[135][10]/CLR, BRAM_reg[136][10]/CLR, BRAM_reg[137][10]/CLR, BRAM_reg[138][10]/CLR, BRAM_reg[139][10]/CLR, BRAM_reg[140][10]/CLR, BRAM_reg[141][10]/CLR, BRAM_reg[142][10]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#23 Warning
 LUT drives async reset alert  
-LUT cell BRAM[191][9]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[176][1]/CLR, BRAM_reg[176][2]/CLR, BRAM_reg[176][3]/CLR, BRAM_reg[176][4]/CLR, BRAM_reg[176][5]/CLR, BRAM_reg[176][6]/CLR, BRAM_reg[176][7]/CLR, BRAM_reg[176][8]/CLR, BRAM_reg[177][1]/CLR, BRAM_reg[177][2]/CLR, BRAM_reg[177][3]/CLR, BRAM_reg[177][4]/CLR, BRAM_reg[177][5]/CLR, BRAM_reg[177][6]/CLR, BRAM_reg[177][7]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[191][11]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][11]/CLR, BRAM_reg[129][11]/CLR, BRAM_reg[130][11]/CLR, BRAM_reg[131][11]/CLR, BRAM_reg[132][11]/CLR, BRAM_reg[133][11]/CLR, BRAM_reg[134][11]/CLR, BRAM_reg[135][11]/CLR, BRAM_reg[136][11]/CLR, BRAM_reg[137][11]/CLR, BRAM_reg[138][11]/CLR, BRAM_reg[139][11]/CLR, BRAM_reg[140][11]/CLR, BRAM_reg[141][11]/CLR, BRAM_reg[142][11]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#24 Warning
 LUT drives async reset alert  
-LUT cell BRAM[31][15]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[16][10]/CLR, BRAM_reg[16][11]/CLR, BRAM_reg[16][12]/CLR, BRAM_reg[16][13]/CLR, BRAM_reg[16][14]/CLR, BRAM_reg[16][7]/CLR, BRAM_reg[16][8]/CLR, BRAM_reg[16][9]/CLR, BRAM_reg[17][10]/CLR, BRAM_reg[17][11]/CLR, BRAM_reg[17][12]/CLR, BRAM_reg[17][13]/CLR, BRAM_reg[17][14]/CLR, BRAM_reg[17][7]/CLR, BRAM_reg[17][8]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[191][12]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][12]/CLR, BRAM_reg[129][12]/CLR, BRAM_reg[130][12]/CLR, BRAM_reg[131][12]/CLR, BRAM_reg[132][12]/CLR, BRAM_reg[133][12]/CLR, BRAM_reg[134][12]/CLR, BRAM_reg[135][12]/CLR, BRAM_reg[136][12]/CLR, BRAM_reg[137][12]/CLR, BRAM_reg[138][12]/CLR, BRAM_reg[139][12]/CLR, BRAM_reg[140][12]/CLR, BRAM_reg[141][12]/CLR, BRAM_reg[142][12]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#25 Warning
 LUT drives async reset alert  
-LUT cell BRAM[47][11]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[32][10]/CLR, BRAM_reg[32][3]/CLR, BRAM_reg[32][4]/CLR, BRAM_reg[32][5]/CLR, BRAM_reg[32][6]/CLR, BRAM_reg[32][7]/CLR, BRAM_reg[32][8]/CLR, BRAM_reg[32][9]/CLR, BRAM_reg[33][10]/CLR, BRAM_reg[33][3]/CLR, BRAM_reg[33][4]/CLR, BRAM_reg[33][5]/CLR, BRAM_reg[33][6]/CLR, BRAM_reg[33][7]/CLR, BRAM_reg[33][8]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[191][13]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][13]/CLR, BRAM_reg[129][13]/CLR, BRAM_reg[130][13]/CLR, BRAM_reg[131][13]/CLR, BRAM_reg[132][13]/CLR, BRAM_reg[133][13]/CLR, BRAM_reg[134][13]/CLR, BRAM_reg[135][13]/CLR, BRAM_reg[136][13]/CLR, BRAM_reg[137][13]/CLR, BRAM_reg[138][13]/CLR, BRAM_reg[139][13]/CLR, BRAM_reg[140][13]/CLR, BRAM_reg[141][13]/CLR, BRAM_reg[142][13]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#26 Warning
 LUT drives async reset alert  
-LUT cell BRAM[47][18]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[32][11]/CLR, BRAM_reg[32][12]/CLR, BRAM_reg[32][13]/CLR, BRAM_reg[32][14]/CLR, BRAM_reg[32][15]/CLR, BRAM_reg[32][16]/CLR, BRAM_reg[32][17]/CLR, BRAM_reg[32][18]/CLR, BRAM_reg[33][11]/CLR, BRAM_reg[33][12]/CLR, BRAM_reg[33][13]/CLR, BRAM_reg[33][14]/CLR, BRAM_reg[33][15]/CLR, BRAM_reg[33][16]/CLR, BRAM_reg[33][17]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[191][14]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][14]/CLR, BRAM_reg[129][14]/CLR, BRAM_reg[130][14]/CLR, BRAM_reg[131][14]/CLR, BRAM_reg[132][14]/CLR, BRAM_reg[133][14]/CLR, BRAM_reg[134][14]/CLR, BRAM_reg[135][14]/CLR, BRAM_reg[136][14]/CLR, BRAM_reg[137][14]/CLR, BRAM_reg[138][14]/CLR, BRAM_reg[139][14]/CLR, BRAM_reg[140][14]/CLR, BRAM_reg[141][14]/CLR, BRAM_reg[142][14]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#27 Warning
 LUT drives async reset alert  
-LUT cell BRAM[47][3]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[16][15]/CLR, BRAM_reg[16][16]/CLR, BRAM_reg[16][17]/CLR, BRAM_reg[16][18]/CLR, BRAM_reg[16][19]/CLR, BRAM_reg[16][20]/CLR, BRAM_reg[17][15]/CLR, BRAM_reg[17][16]/CLR, BRAM_reg[17][17]/CLR, BRAM_reg[17][18]/CLR, BRAM_reg[17][19]/CLR, BRAM_reg[17][20]/CLR, BRAM_reg[18][15]/CLR, BRAM_reg[18][16]/CLR, BRAM_reg[18][17]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[191][15]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][15]/CLR, BRAM_reg[129][15]/CLR, BRAM_reg[130][15]/CLR, BRAM_reg[131][15]/CLR, BRAM_reg[132][15]/CLR, BRAM_reg[133][15]/CLR, BRAM_reg[134][15]/CLR, BRAM_reg[135][15]/CLR, BRAM_reg[136][15]/CLR, BRAM_reg[137][15]/CLR, BRAM_reg[138][15]/CLR, BRAM_reg[139][15]/CLR, BRAM_reg[140][15]/CLR, BRAM_reg[141][15]/CLR, BRAM_reg[142][15]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#28 Warning
 LUT drives async reset alert  
-LUT cell BRAM[63][12]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[48][10]/CLR, BRAM_reg[48][11]/CLR, BRAM_reg[48][4]/CLR, BRAM_reg[48][5]/CLR, BRAM_reg[48][6]/CLR, BRAM_reg[48][7]/CLR, BRAM_reg[48][8]/CLR, BRAM_reg[48][9]/CLR, BRAM_reg[49][10]/CLR, BRAM_reg[49][11]/CLR, BRAM_reg[49][4]/CLR, BRAM_reg[49][5]/CLR, BRAM_reg[49][6]/CLR, BRAM_reg[49][7]/CLR, BRAM_reg[49][8]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[191][16]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][16]/CLR, BRAM_reg[129][16]/CLR, BRAM_reg[130][16]/CLR, BRAM_reg[131][16]/CLR, BRAM_reg[132][16]/CLR, BRAM_reg[133][16]/CLR, BRAM_reg[134][16]/CLR, BRAM_reg[135][16]/CLR, BRAM_reg[136][16]/CLR, BRAM_reg[137][16]/CLR, BRAM_reg[138][16]/CLR, BRAM_reg[139][16]/CLR, BRAM_reg[140][16]/CLR, BRAM_reg[141][16]/CLR, BRAM_reg[142][16]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#29 Warning
 LUT drives async reset alert  
-LUT cell BRAM[63][19]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[48][12]/CLR, BRAM_reg[48][13]/CLR, BRAM_reg[48][14]/CLR, BRAM_reg[48][15]/CLR, BRAM_reg[48][16]/CLR, BRAM_reg[48][17]/CLR, BRAM_reg[48][18]/CLR, BRAM_reg[49][12]/CLR, BRAM_reg[49][13]/CLR, BRAM_reg[49][14]/CLR, BRAM_reg[49][15]/CLR, BRAM_reg[49][16]/CLR, BRAM_reg[49][17]/CLR, BRAM_reg[49][18]/CLR, BRAM_reg[49][19]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[191][17]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][17]/CLR, BRAM_reg[129][17]/CLR, BRAM_reg[130][17]/CLR, BRAM_reg[131][17]/CLR, BRAM_reg[132][17]/CLR, BRAM_reg[133][17]/CLR, BRAM_reg[134][17]/CLR, BRAM_reg[135][17]/CLR, BRAM_reg[136][17]/CLR, BRAM_reg[137][17]/CLR, BRAM_reg[138][17]/CLR, BRAM_reg[139][17]/CLR, BRAM_reg[140][17]/CLR, BRAM_reg[141][17]/CLR, BRAM_reg[142][17]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#30 Warning
 LUT drives async reset alert  
-LUT cell BRAM[63][20]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[16][1]/CLR, BRAM_reg[16][2]/CLR, BRAM_reg[16][3]/CLR, BRAM_reg[16][4]/CLR, BRAM_reg[16][5]/CLR, BRAM_reg[16][6]/CLR, BRAM_reg[17][1]/CLR, BRAM_reg[17][2]/CLR, BRAM_reg[17][3]/CLR, BRAM_reg[17][4]/CLR, BRAM_reg[17][5]/CLR, BRAM_reg[17][6]/CLR, BRAM_reg[18][1]/CLR, BRAM_reg[18][2]/CLR, BRAM_reg[18][3]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[191][18]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][18]/CLR, BRAM_reg[129][18]/CLR, BRAM_reg[130][18]/CLR, BRAM_reg[131][18]/CLR, BRAM_reg[132][18]/CLR, BRAM_reg[133][18]/CLR, BRAM_reg[134][18]/CLR, BRAM_reg[135][18]/CLR, BRAM_reg[136][18]/CLR, BRAM_reg[137][18]/CLR, BRAM_reg[138][18]/CLR, BRAM_reg[139][18]/CLR, BRAM_reg[140][18]/CLR, BRAM_reg[141][18]/CLR, BRAM_reg[142][18]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#31 Warning
 LUT drives async reset alert  
-LUT cell BRAM[63][4]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[48][1]/CLR, BRAM_reg[48][2]/CLR, BRAM_reg[48][3]/CLR, BRAM_reg[49][1]/CLR, BRAM_reg[49][2]/CLR, BRAM_reg[49][3]/CLR, BRAM_reg[50][1]/CLR, BRAM_reg[50][2]/CLR, BRAM_reg[50][3]/CLR, BRAM_reg[51][1]/CLR, BRAM_reg[51][2]/CLR, BRAM_reg[51][3]/CLR, BRAM_reg[52][1]/CLR, BRAM_reg[52][2]/CLR, BRAM_reg[52][3]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[191][19]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][19]/CLR, BRAM_reg[129][19]/CLR, BRAM_reg[130][19]/CLR, BRAM_reg[131][19]/CLR, BRAM_reg[132][19]/CLR, BRAM_reg[133][19]/CLR, BRAM_reg[134][19]/CLR, BRAM_reg[135][19]/CLR, BRAM_reg[136][19]/CLR, BRAM_reg[137][19]/CLR, BRAM_reg[138][19]/CLR, BRAM_reg[139][19]/CLR, BRAM_reg[140][19]/CLR, BRAM_reg[141][19]/CLR, BRAM_reg[142][19]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#32 Warning
 LUT drives async reset alert  
-LUT cell BRAM[79][13]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[64][10]/CLR, BRAM_reg[64][11]/CLR, BRAM_reg[64][12]/CLR, BRAM_reg[64][5]/CLR, BRAM_reg[64][6]/CLR, BRAM_reg[64][7]/CLR, BRAM_reg[64][8]/CLR, BRAM_reg[64][9]/CLR, BRAM_reg[65][10]/CLR, BRAM_reg[65][11]/CLR, BRAM_reg[65][12]/CLR, BRAM_reg[65][5]/CLR, BRAM_reg[65][6]/CLR, BRAM_reg[65][7]/CLR, BRAM_reg[65][8]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[191][1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][1]/CLR, BRAM_reg[129][1]/CLR, BRAM_reg[130][1]/CLR, BRAM_reg[131][1]/CLR, BRAM_reg[132][1]/CLR, BRAM_reg[133][1]/CLR, BRAM_reg[134][1]/CLR, BRAM_reg[135][1]/CLR, BRAM_reg[136][1]/CLR, BRAM_reg[137][1]/CLR, BRAM_reg[138][1]/CLR, BRAM_reg[139][1]/CLR, BRAM_reg[140][1]/CLR, BRAM_reg[141][1]/CLR, BRAM_reg[142][1]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#33 Warning
 LUT drives async reset alert  
-LUT cell BRAM[95][15]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[80][10]/CLR, BRAM_reg[80][11]/CLR, BRAM_reg[80][12]/CLR, BRAM_reg[80][13]/CLR, BRAM_reg[80][14]/CLR, BRAM_reg[80][7]/CLR, BRAM_reg[80][8]/CLR, BRAM_reg[80][9]/CLR, BRAM_reg[81][10]/CLR, BRAM_reg[81][11]/CLR, BRAM_reg[81][12]/CLR, BRAM_reg[81][13]/CLR, BRAM_reg[81][14]/CLR, BRAM_reg[81][7]/CLR, BRAM_reg[81][8]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[191][20]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][20]/CLR, BRAM_reg[129][20]/CLR, BRAM_reg[130][20]/CLR, BRAM_reg[131][20]/CLR, BRAM_reg[132][20]/CLR, BRAM_reg[133][20]/CLR, BRAM_reg[134][20]/CLR, BRAM_reg[135][20]/CLR, BRAM_reg[136][20]/CLR, BRAM_reg[137][20]/CLR, BRAM_reg[138][20]/CLR, BRAM_reg[139][20]/CLR, BRAM_reg[140][20]/CLR, BRAM_reg[141][20]/CLR, BRAM_reg[142][20]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#34 Warning
 LUT drives async reset alert  
-LUT cell input_count[0]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) acq_count_reg[0]/CLR, binCounts_reg[10]/CLR, binCounts_reg[11]/CLR, binCounts_reg[12]/CLR, binCounts_reg[13]/CLR, binCounts_reg[14]/CLR, binCounts_reg[15]/CLR, binCounts_reg[16]/CLR, binCounts_reg[17]/CLR, binCounts_reg[18]/CLR, binCounts_reg[19]/CLR, binCounts_reg[2]/CLR, binCounts_reg[3]/CLR, binCounts_reg[4]/CLR, binCounts_reg[5]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[191][2]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][2]/CLR, BRAM_reg[129][2]/CLR, BRAM_reg[130][2]/CLR, BRAM_reg[131][2]/CLR, BRAM_reg[132][2]/CLR, BRAM_reg[133][2]/CLR, BRAM_reg[134][2]/CLR, BRAM_reg[135][2]/CLR, BRAM_reg[136][2]/CLR, BRAM_reg[137][2]/CLR, BRAM_reg[138][2]/CLR, BRAM_reg[139][2]/CLR, BRAM_reg[140][2]/CLR, BRAM_reg[141][2]/CLR, BRAM_reg[142][2]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#35 Warning
 LUT drives async reset alert  
-LUT cell stateRAM[191]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[16][0]/CLR, BRAM_reg[17][0]/CLR, BRAM_reg[18][0]/CLR, BRAM_reg[19][0]/CLR, BRAM_reg[32][0]/CLR, BRAM_reg[33][0]/CLR, BRAM_reg[34][0]/CLR, BRAM_reg[35][0]/CLR, BRAM_reg[36][0]/CLR, BRAM_reg[37][0]/CLR, BRAM_reg[38][0]/CLR, BRAM_reg[39][0]/CLR, BRAM_reg[40][0]/CLR, BRAM_reg[41][0]/CLR, BRAM_reg[42][0]/CLR (the first 15 of 125 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell BRAM[191][3]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][3]/CLR, BRAM_reg[129][3]/CLR, BRAM_reg[130][3]/CLR, BRAM_reg[131][3]/CLR, BRAM_reg[132][3]/CLR, BRAM_reg[133][3]/CLR, BRAM_reg[134][3]/CLR, BRAM_reg[135][3]/CLR, BRAM_reg[136][3]/CLR, BRAM_reg[137][3]/CLR, BRAM_reg[138][3]/CLR, BRAM_reg[139][3]/CLR, BRAM_reg[140][3]/CLR, BRAM_reg[141][3]/CLR, BRAM_reg[142][3]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#36 Warning
+LUT drives async reset alert  
+LUT cell BRAM[191][4]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][4]/CLR, BRAM_reg[129][4]/CLR, BRAM_reg[130][4]/CLR, BRAM_reg[131][4]/CLR, BRAM_reg[132][4]/CLR, BRAM_reg[133][4]/CLR, BRAM_reg[134][4]/CLR, BRAM_reg[135][4]/CLR, BRAM_reg[136][4]/CLR, BRAM_reg[137][4]/CLR, BRAM_reg[138][4]/CLR, BRAM_reg[139][4]/CLR, BRAM_reg[140][4]/CLR, BRAM_reg[141][4]/CLR, BRAM_reg[142][4]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#37 Warning
+LUT drives async reset alert  
+LUT cell BRAM[191][5]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][5]/CLR, BRAM_reg[129][5]/CLR, BRAM_reg[130][5]/CLR, BRAM_reg[131][5]/CLR, BRAM_reg[132][5]/CLR, BRAM_reg[133][5]/CLR, BRAM_reg[134][5]/CLR, BRAM_reg[135][5]/CLR, BRAM_reg[136][5]/CLR, BRAM_reg[137][5]/CLR, BRAM_reg[138][5]/CLR, BRAM_reg[139][5]/CLR, BRAM_reg[140][5]/CLR, BRAM_reg[141][5]/CLR, BRAM_reg[142][5]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#38 Warning
+LUT drives async reset alert  
+LUT cell BRAM[191][6]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][6]/CLR, BRAM_reg[129][6]/CLR, BRAM_reg[130][6]/CLR, BRAM_reg[131][6]/CLR, BRAM_reg[132][6]/CLR, BRAM_reg[133][6]/CLR, BRAM_reg[134][6]/CLR, BRAM_reg[135][6]/CLR, BRAM_reg[136][6]/CLR, BRAM_reg[137][6]/CLR, BRAM_reg[138][6]/CLR, BRAM_reg[139][6]/CLR, BRAM_reg[140][6]/CLR, BRAM_reg[141][6]/CLR, BRAM_reg[142][6]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#39 Warning
+LUT drives async reset alert  
+LUT cell BRAM[191][7]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][7]/CLR, BRAM_reg[129][7]/CLR, BRAM_reg[130][7]/CLR, BRAM_reg[131][7]/CLR, BRAM_reg[132][7]/CLR, BRAM_reg[133][7]/CLR, BRAM_reg[134][7]/CLR, BRAM_reg[135][7]/CLR, BRAM_reg[136][7]/CLR, BRAM_reg[137][7]/CLR, BRAM_reg[138][7]/CLR, BRAM_reg[139][7]/CLR, BRAM_reg[140][7]/CLR, BRAM_reg[141][7]/CLR, BRAM_reg[142][7]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#40 Warning
+LUT drives async reset alert  
+LUT cell BRAM[191][8]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][8]/CLR, BRAM_reg[129][8]/CLR, BRAM_reg[130][8]/CLR, BRAM_reg[131][8]/CLR, BRAM_reg[132][8]/CLR, BRAM_reg[133][8]/CLR, BRAM_reg[134][8]/CLR, BRAM_reg[135][8]/CLR, BRAM_reg[136][8]/CLR, BRAM_reg[137][8]/CLR, BRAM_reg[138][8]/CLR, BRAM_reg[139][8]/CLR, BRAM_reg[140][8]/CLR, BRAM_reg[141][8]/CLR, BRAM_reg[142][8]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#41 Warning
+LUT drives async reset alert  
+LUT cell BRAM[191][9]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[128][9]/CLR, BRAM_reg[129][9]/CLR, BRAM_reg[130][9]/CLR, BRAM_reg[131][9]/CLR, BRAM_reg[132][9]/CLR, BRAM_reg[133][9]/CLR, BRAM_reg[134][9]/CLR, BRAM_reg[135][9]/CLR, BRAM_reg[136][9]/CLR, BRAM_reg[137][9]/CLR, BRAM_reg[138][9]/CLR, BRAM_reg[139][9]/CLR, BRAM_reg[140][9]/CLR, BRAM_reg[141][9]/CLR, BRAM_reg[142][9]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#42 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][10]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][10]/CLR, BRAM_reg[10][10]/CLR, BRAM_reg[11][10]/CLR, BRAM_reg[12][10]/CLR, BRAM_reg[13][10]/CLR, BRAM_reg[14][10]/CLR, BRAM_reg[15][10]/CLR, BRAM_reg[16][10]/CLR, BRAM_reg[17][10]/CLR, BRAM_reg[18][10]/CLR, BRAM_reg[19][10]/CLR, BRAM_reg[1][10]/CLR, BRAM_reg[20][10]/CLR, BRAM_reg[21][10]/CLR, BRAM_reg[22][10]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#43 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][11]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][11]/CLR, BRAM_reg[10][11]/CLR, BRAM_reg[11][11]/CLR, BRAM_reg[12][11]/CLR, BRAM_reg[13][11]/CLR, BRAM_reg[14][11]/CLR, BRAM_reg[15][11]/CLR, BRAM_reg[16][11]/CLR, BRAM_reg[17][11]/CLR, BRAM_reg[18][11]/CLR, BRAM_reg[19][11]/CLR, BRAM_reg[1][11]/CLR, BRAM_reg[20][11]/CLR, BRAM_reg[21][11]/CLR, BRAM_reg[22][11]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#44 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][12]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][12]/CLR, BRAM_reg[10][12]/CLR, BRAM_reg[11][12]/CLR, BRAM_reg[12][12]/CLR, BRAM_reg[13][12]/CLR, BRAM_reg[14][12]/CLR, BRAM_reg[15][12]/CLR, BRAM_reg[16][12]/CLR, BRAM_reg[17][12]/CLR, BRAM_reg[18][12]/CLR, BRAM_reg[19][12]/CLR, BRAM_reg[1][12]/CLR, BRAM_reg[20][12]/CLR, BRAM_reg[21][12]/CLR, BRAM_reg[22][12]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#45 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][13]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][13]/CLR, BRAM_reg[10][13]/CLR, BRAM_reg[11][13]/CLR, BRAM_reg[12][13]/CLR, BRAM_reg[13][13]/CLR, BRAM_reg[14][13]/CLR, BRAM_reg[15][13]/CLR, BRAM_reg[16][13]/CLR, BRAM_reg[17][13]/CLR, BRAM_reg[18][13]/CLR, BRAM_reg[19][13]/CLR, BRAM_reg[1][13]/CLR, BRAM_reg[20][13]/CLR, BRAM_reg[21][13]/CLR, BRAM_reg[22][13]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#46 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][14]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][14]/CLR, BRAM_reg[10][14]/CLR, BRAM_reg[11][14]/CLR, BRAM_reg[12][14]/CLR, BRAM_reg[13][14]/CLR, BRAM_reg[14][14]/CLR, BRAM_reg[15][14]/CLR, BRAM_reg[16][14]/CLR, BRAM_reg[17][14]/CLR, BRAM_reg[18][14]/CLR, BRAM_reg[19][14]/CLR, BRAM_reg[1][14]/CLR, BRAM_reg[20][14]/CLR, BRAM_reg[21][14]/CLR, BRAM_reg[22][14]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#47 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][15]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][15]/CLR, BRAM_reg[10][15]/CLR, BRAM_reg[11][15]/CLR, BRAM_reg[12][15]/CLR, BRAM_reg[13][15]/CLR, BRAM_reg[14][15]/CLR, BRAM_reg[15][15]/CLR, BRAM_reg[16][15]/CLR, BRAM_reg[17][15]/CLR, BRAM_reg[18][15]/CLR, BRAM_reg[19][15]/CLR, BRAM_reg[1][15]/CLR, BRAM_reg[20][15]/CLR, BRAM_reg[21][15]/CLR, BRAM_reg[22][15]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#48 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][16]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][16]/CLR, BRAM_reg[10][16]/CLR, BRAM_reg[11][16]/CLR, BRAM_reg[12][16]/CLR, BRAM_reg[13][16]/CLR, BRAM_reg[14][16]/CLR, BRAM_reg[15][16]/CLR, BRAM_reg[16][16]/CLR, BRAM_reg[17][16]/CLR, BRAM_reg[18][16]/CLR, BRAM_reg[19][16]/CLR, BRAM_reg[1][16]/CLR, BRAM_reg[20][16]/CLR, BRAM_reg[21][16]/CLR, BRAM_reg[22][16]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#49 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][17]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][17]/CLR, BRAM_reg[10][17]/CLR, BRAM_reg[11][17]/CLR, BRAM_reg[12][17]/CLR, BRAM_reg[13][17]/CLR, BRAM_reg[14][17]/CLR, BRAM_reg[15][17]/CLR, BRAM_reg[16][17]/CLR, BRAM_reg[17][17]/CLR, BRAM_reg[18][17]/CLR, BRAM_reg[19][17]/CLR, BRAM_reg[1][17]/CLR, BRAM_reg[20][17]/CLR, BRAM_reg[21][17]/CLR, BRAM_reg[22][17]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#50 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][18]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][18]/CLR, BRAM_reg[10][18]/CLR, BRAM_reg[11][18]/CLR, BRAM_reg[12][18]/CLR, BRAM_reg[13][18]/CLR, BRAM_reg[14][18]/CLR, BRAM_reg[15][18]/CLR, BRAM_reg[16][18]/CLR, BRAM_reg[17][18]/CLR, BRAM_reg[18][18]/CLR, BRAM_reg[19][18]/CLR, BRAM_reg[1][18]/CLR, BRAM_reg[20][18]/CLR, BRAM_reg[21][18]/CLR, BRAM_reg[22][18]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#51 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][19]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][19]/CLR, BRAM_reg[10][19]/CLR, BRAM_reg[11][19]/CLR, BRAM_reg[12][19]/CLR, BRAM_reg[13][19]/CLR, BRAM_reg[14][19]/CLR, BRAM_reg[15][19]/CLR, BRAM_reg[16][19]/CLR, BRAM_reg[17][19]/CLR, BRAM_reg[18][19]/CLR, BRAM_reg[19][19]/CLR, BRAM_reg[1][19]/CLR, BRAM_reg[20][19]/CLR, BRAM_reg[21][19]/CLR, BRAM_reg[22][19]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#52 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][1]/CLR, BRAM_reg[10][1]/CLR, BRAM_reg[11][1]/CLR, BRAM_reg[12][1]/CLR, BRAM_reg[13][1]/CLR, BRAM_reg[14][1]/CLR, BRAM_reg[15][1]/CLR, BRAM_reg[16][1]/CLR, BRAM_reg[17][1]/CLR, BRAM_reg[18][1]/CLR, BRAM_reg[19][1]/CLR, BRAM_reg[1][1]/CLR, BRAM_reg[20][1]/CLR, BRAM_reg[21][1]/CLR, BRAM_reg[22][1]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#53 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][20]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][20]/CLR, BRAM_reg[10][20]/CLR, BRAM_reg[11][20]/CLR, BRAM_reg[12][20]/CLR, BRAM_reg[13][20]/CLR, BRAM_reg[14][20]/CLR, BRAM_reg[15][20]/CLR, BRAM_reg[16][20]/CLR, BRAM_reg[17][20]/CLR, BRAM_reg[18][20]/CLR, BRAM_reg[19][20]/CLR, BRAM_reg[1][20]/CLR, BRAM_reg[20][20]/CLR, BRAM_reg[21][20]/CLR, BRAM_reg[22][20]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#54 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][2]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][2]/CLR, BRAM_reg[10][2]/CLR, BRAM_reg[11][2]/CLR, BRAM_reg[12][2]/CLR, BRAM_reg[13][2]/CLR, BRAM_reg[14][2]/CLR, BRAM_reg[15][2]/CLR, BRAM_reg[16][2]/CLR, BRAM_reg[17][2]/CLR, BRAM_reg[18][2]/CLR, BRAM_reg[19][2]/CLR, BRAM_reg[1][2]/CLR, BRAM_reg[20][2]/CLR, BRAM_reg[21][2]/CLR, BRAM_reg[22][2]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#55 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][3]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][3]/CLR, BRAM_reg[10][3]/CLR, BRAM_reg[11][3]/CLR, BRAM_reg[12][3]/CLR, BRAM_reg[13][3]/CLR, BRAM_reg[14][3]/CLR, BRAM_reg[15][3]/CLR, BRAM_reg[16][3]/CLR, BRAM_reg[17][3]/CLR, BRAM_reg[18][3]/CLR, BRAM_reg[19][3]/CLR, BRAM_reg[1][3]/CLR, BRAM_reg[20][3]/CLR, BRAM_reg[21][3]/CLR, BRAM_reg[22][3]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#56 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][4]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][4]/CLR, BRAM_reg[10][4]/CLR, BRAM_reg[11][4]/CLR, BRAM_reg[12][4]/CLR, BRAM_reg[13][4]/CLR, BRAM_reg[14][4]/CLR, BRAM_reg[15][4]/CLR, BRAM_reg[16][4]/CLR, BRAM_reg[17][4]/CLR, BRAM_reg[18][4]/CLR, BRAM_reg[19][4]/CLR, BRAM_reg[1][4]/CLR, BRAM_reg[20][4]/CLR, BRAM_reg[21][4]/CLR, BRAM_reg[22][4]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#57 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][5]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][5]/CLR, BRAM_reg[10][5]/CLR, BRAM_reg[11][5]/CLR, BRAM_reg[12][5]/CLR, BRAM_reg[13][5]/CLR, BRAM_reg[14][5]/CLR, BRAM_reg[15][5]/CLR, BRAM_reg[16][5]/CLR, BRAM_reg[17][5]/CLR, BRAM_reg[18][5]/CLR, BRAM_reg[19][5]/CLR, BRAM_reg[1][5]/CLR, BRAM_reg[20][5]/CLR, BRAM_reg[21][5]/CLR, BRAM_reg[22][5]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#58 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][6]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][6]/CLR, BRAM_reg[10][6]/CLR, BRAM_reg[11][6]/CLR, BRAM_reg[12][6]/CLR, BRAM_reg[13][6]/CLR, BRAM_reg[14][6]/CLR, BRAM_reg[15][6]/CLR, BRAM_reg[16][6]/CLR, BRAM_reg[17][6]/CLR, BRAM_reg[18][6]/CLR, BRAM_reg[19][6]/CLR, BRAM_reg[1][6]/CLR, BRAM_reg[20][6]/CLR, BRAM_reg[21][6]/CLR, BRAM_reg[22][6]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#59 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][7]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][7]/CLR, BRAM_reg[10][7]/CLR, BRAM_reg[11][7]/CLR, BRAM_reg[12][7]/CLR, BRAM_reg[13][7]/CLR, BRAM_reg[14][7]/CLR, BRAM_reg[15][7]/CLR, BRAM_reg[16][7]/CLR, BRAM_reg[17][7]/CLR, BRAM_reg[18][7]/CLR, BRAM_reg[19][7]/CLR, BRAM_reg[1][7]/CLR, BRAM_reg[20][7]/CLR, BRAM_reg[21][7]/CLR, BRAM_reg[22][7]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#60 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][8]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][8]/CLR, BRAM_reg[10][8]/CLR, BRAM_reg[11][8]/CLR, BRAM_reg[12][8]/CLR, BRAM_reg[13][8]/CLR, BRAM_reg[14][8]/CLR, BRAM_reg[15][8]/CLR, BRAM_reg[16][8]/CLR, BRAM_reg[17][8]/CLR, BRAM_reg[18][8]/CLR, BRAM_reg[19][8]/CLR, BRAM_reg[1][8]/CLR, BRAM_reg[20][8]/CLR, BRAM_reg[21][8]/CLR, BRAM_reg[22][8]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#61 Warning
+LUT drives async reset alert  
+LUT cell BRAM[63][9]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][9]/CLR, BRAM_reg[10][9]/CLR, BRAM_reg[11][9]/CLR, BRAM_reg[12][9]/CLR, BRAM_reg[13][9]/CLR, BRAM_reg[14][9]/CLR, BRAM_reg[15][9]/CLR, BRAM_reg[16][9]/CLR, BRAM_reg[17][9]/CLR, BRAM_reg[18][9]/CLR, BRAM_reg[19][9]/CLR, BRAM_reg[1][9]/CLR, BRAM_reg[20][9]/CLR, BRAM_reg[21][9]/CLR, BRAM_reg[22][9]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#62 Warning
+LUT drives async reset alert  
+LUT cell binCounts[20]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) addrSaver_reg[0][0]/CLR, addrSaver_reg[0][1]/CLR, addrSaver_reg[0][2]/CLR, addrSaver_reg[0][3]/CLR, addrSaver_reg[0][4]/CLR, addrSaver_reg[0][5]/CLR, addrSaver_reg[1][0]/CLR, addrSaver_reg[1][1]/CLR, addrSaver_reg[1][2]/CLR, addrSaver_reg[1][3]/CLR, addrSaver_reg[1][4]/CLR, addrSaver_reg[1][5]/CLR, addrSaver_reg[2][0]/CLR, addrSaver_reg[2][1]/CLR, addrSaver_reg[2][2]/CLR (the first 15 of 100 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#63 Warning
+LUT drives async reset alert  
+LUT cell pixel_count[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) BRAM_reg[0][0]/CLR, BRAM_reg[100][0]/CLR, BRAM_reg[101][0]/CLR, BRAM_reg[102][0]/CLR, BRAM_reg[103][0]/CLR, BRAM_reg[104][0]/CLR, BRAM_reg[105][0]/CLR, BRAM_reg[106][0]/CLR, BRAM_reg[107][0]/CLR, BRAM_reg[108][0]/CLR, BRAM_reg[109][0]/CLR, BRAM_reg[10][0]/CLR, BRAM_reg[112][0]/CLR, BRAM_reg[113][0]/CLR, BRAM_reg[114][0]/CLR (the first 15 of 100 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#64 Warning
+LUT drives async reset alert  
+LUT cell stateRAM[127]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) stateRAM_reg[100]/CLR, stateRAM_reg[101]/CLR, stateRAM_reg[102]/CLR, stateRAM_reg[103]/CLR, stateRAM_reg[104]/CLR, stateRAM_reg[105]/CLR, stateRAM_reg[106]/CLR, stateRAM_reg[107]/CLR, stateRAM_reg[108]/CLR, stateRAM_reg[109]/CLR, stateRAM_reg[110]/CLR, stateRAM_reg[111]/CLR, stateRAM_reg[112]/CLR, stateRAM_reg[113]/CLR, stateRAM_reg[114]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#65 Warning
+LUT drives async reset alert  
+LUT cell stateRAM[191]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) stateRAM_reg[128]/CLR, stateRAM_reg[129]/CLR, stateRAM_reg[130]/CLR, stateRAM_reg[131]/CLR, stateRAM_reg[132]/CLR, stateRAM_reg[133]/CLR, stateRAM_reg[134]/CLR, stateRAM_reg[135]/CLR, stateRAM_reg[136]/CLR, stateRAM_reg[137]/CLR, stateRAM_reg[138]/CLR, stateRAM_reg[139]/CLR, stateRAM_reg[140]/CLR, stateRAM_reg[141]/CLR, stateRAM_reg[142]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#66 Warning
+LUT drives async reset alert  
+LUT cell stateRAM[63]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) stateRAM_reg[0]/CLR, stateRAM_reg[10]/CLR, stateRAM_reg[11]/CLR, stateRAM_reg[12]/CLR, stateRAM_reg[13]/CLR, stateRAM_reg[14]/CLR, stateRAM_reg[15]/CLR, stateRAM_reg[16]/CLR, stateRAM_reg[17]/CLR, stateRAM_reg[18]/CLR, stateRAM_reg[19]/CLR, stateRAM_reg[1]/CLR, stateRAM_reg[20]/CLR, stateRAM_reg[21]/CLR, stateRAM_reg[22]/CLR (the first 15 of 64 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-17#1 Warning
@@ -5211,107 +5366,317 @@ Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch peakResult_reg[0][0] cannot be properly analyzed as its control pin peakResult_reg[0][0]/G is not reached by a timing clock
+The latch THminus_reg[0][3] cannot be properly analyzed as its control pin THminus_reg[0][3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch peakResult_reg[0][1] cannot be properly analyzed as its control pin peakResult_reg[0][1]/G is not reached by a timing clock
+The latch THminus_reg[0][4] cannot be properly analyzed as its control pin THminus_reg[0][4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#3 Warning
 Non-clocked latch  
-The latch peakResult_reg[0][2] cannot be properly analyzed as its control pin peakResult_reg[0][2]/G is not reached by a timing clock
+The latch THminus_reg[0][5] cannot be properly analyzed as its control pin THminus_reg[0][5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#4 Warning
 Non-clocked latch  
-The latch peakResult_reg[0][3] cannot be properly analyzed as its control pin peakResult_reg[0][3]/G is not reached by a timing clock
+The latch THminus_reg[0][6] cannot be properly analyzed as its control pin THminus_reg[0][6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#5 Warning
 Non-clocked latch  
-The latch peakResult_reg[0][4] cannot be properly analyzed as its control pin peakResult_reg[0][4]/G is not reached by a timing clock
+The latch THminus_reg[0][7] cannot be properly analyzed as its control pin THminus_reg[0][7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#6 Warning
 Non-clocked latch  
-The latch peakResult_reg[0][5] cannot be properly analyzed as its control pin peakResult_reg[0][5]/G is not reached by a timing clock
+The latch THminus_reg[0][8] cannot be properly analyzed as its control pin THminus_reg[0][8]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#7 Warning
 Non-clocked latch  
-The latch peakResult_reg[0][6] cannot be properly analyzed as its control pin peakResult_reg[0][6]/G is not reached by a timing clock
+The latch THminus_reg[0][9] cannot be properly analyzed as its control pin THminus_reg[0][9]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#8 Warning
 Non-clocked latch  
-The latch peakResult_reg[1][0] cannot be properly analyzed as its control pin peakResult_reg[1][0]/G is not reached by a timing clock
+The latch THminus_reg[1][3] cannot be properly analyzed as its control pin THminus_reg[1][3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#9 Warning
 Non-clocked latch  
-The latch peakResult_reg[1][1] cannot be properly analyzed as its control pin peakResult_reg[1][1]/G is not reached by a timing clock
+The latch THminus_reg[1][4] cannot be properly analyzed as its control pin THminus_reg[1][4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#10 Warning
 Non-clocked latch  
-The latch peakResult_reg[1][2] cannot be properly analyzed as its control pin peakResult_reg[1][2]/G is not reached by a timing clock
+The latch THminus_reg[1][5] cannot be properly analyzed as its control pin THminus_reg[1][5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#11 Warning
 Non-clocked latch  
-The latch peakResult_reg[1][3] cannot be properly analyzed as its control pin peakResult_reg[1][3]/G is not reached by a timing clock
+The latch THminus_reg[1][6] cannot be properly analyzed as its control pin THminus_reg[1][6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#12 Warning
 Non-clocked latch  
-The latch peakResult_reg[1][4] cannot be properly analyzed as its control pin peakResult_reg[1][4]/G is not reached by a timing clock
+The latch THminus_reg[1][7] cannot be properly analyzed as its control pin THminus_reg[1][7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#13 Warning
 Non-clocked latch  
-The latch peakResult_reg[1][5] cannot be properly analyzed as its control pin peakResult_reg[1][5]/G is not reached by a timing clock
+The latch THminus_reg[1][8] cannot be properly analyzed as its control pin THminus_reg[1][8]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#14 Warning
 Non-clocked latch  
-The latch peakResult_reg[1][6] cannot be properly analyzed as its control pin peakResult_reg[1][6]/G is not reached by a timing clock
+The latch THminus_reg[1][9] cannot be properly analyzed as its control pin THminus_reg[1][9]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#15 Warning
 Non-clocked latch  
-The latch peakResult_reg[2][0] cannot be properly analyzed as its control pin peakResult_reg[2][0]/G is not reached by a timing clock
+The latch THminus_reg[2][3] cannot be properly analyzed as its control pin THminus_reg[2][3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#16 Warning
 Non-clocked latch  
-The latch peakResult_reg[2][1] cannot be properly analyzed as its control pin peakResult_reg[2][1]/G is not reached by a timing clock
+The latch THminus_reg[2][4] cannot be properly analyzed as its control pin THminus_reg[2][4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#17 Warning
 Non-clocked latch  
-The latch peakResult_reg[2][2] cannot be properly analyzed as its control pin peakResult_reg[2][2]/G is not reached by a timing clock
+The latch THminus_reg[2][5] cannot be properly analyzed as its control pin THminus_reg[2][5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#18 Warning
 Non-clocked latch  
-The latch peakResult_reg[2][3] cannot be properly analyzed as its control pin peakResult_reg[2][3]/G is not reached by a timing clock
+The latch THminus_reg[2][6] cannot be properly analyzed as its control pin THminus_reg[2][6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#19 Warning
 Non-clocked latch  
-The latch peakResult_reg[2][4] cannot be properly analyzed as its control pin peakResult_reg[2][4]/G is not reached by a timing clock
+The latch THminus_reg[2][7] cannot be properly analyzed as its control pin THminus_reg[2][7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#20 Warning
 Non-clocked latch  
-The latch peakResult_reg[2][5] cannot be properly analyzed as its control pin peakResult_reg[2][5]/G is not reached by a timing clock
+The latch THminus_reg[2][8] cannot be properly analyzed as its control pin THminus_reg[2][8]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#21 Warning
 Non-clocked latch  
+The latch THminus_reg[2][9] cannot be properly analyzed as its control pin THminus_reg[2][9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch THpositive_reg[0][6] cannot be properly analyzed as its control pin THpositive_reg[0][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch THpositive_reg[0][7] cannot be properly analyzed as its control pin THpositive_reg[0][7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch THpositive_reg[0][8] cannot be properly analyzed as its control pin THpositive_reg[0][8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch THpositive_reg[0][9] cannot be properly analyzed as its control pin THpositive_reg[0][9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch THpositive_reg[1][6] cannot be properly analyzed as its control pin THpositive_reg[1][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch THpositive_reg[1][7] cannot be properly analyzed as its control pin THpositive_reg[1][7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch THpositive_reg[1][8] cannot be properly analyzed as its control pin THpositive_reg[1][8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch THpositive_reg[1][9] cannot be properly analyzed as its control pin THpositive_reg[1][9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch THpositive_reg[2][6] cannot be properly analyzed as its control pin THpositive_reg[2][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch THpositive_reg[2][7] cannot be properly analyzed as its control pin THpositive_reg[2][7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch THpositive_reg[2][8] cannot be properly analyzed as its control pin THpositive_reg[2][8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch THpositive_reg[2][9] cannot be properly analyzed as its control pin THpositive_reg[2][9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch peakResult_reg[0][0] cannot be properly analyzed as its control pin peakResult_reg[0][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch peakResult_reg[0][1] cannot be properly analyzed as its control pin peakResult_reg[0][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch peakResult_reg[0][2] cannot be properly analyzed as its control pin peakResult_reg[0][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch peakResult_reg[0][3] cannot be properly analyzed as its control pin peakResult_reg[0][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch peakResult_reg[0][4] cannot be properly analyzed as its control pin peakResult_reg[0][4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch peakResult_reg[0][5] cannot be properly analyzed as its control pin peakResult_reg[0][5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch peakResult_reg[0][6] cannot be properly analyzed as its control pin peakResult_reg[0][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch peakResult_reg[0][7] cannot be properly analyzed as its control pin peakResult_reg[0][7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch peakResult_reg[0][8] cannot be properly analyzed as its control pin peakResult_reg[0][8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch peakResult_reg[0][9] cannot be properly analyzed as its control pin peakResult_reg[0][9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch peakResult_reg[1][0] cannot be properly analyzed as its control pin peakResult_reg[1][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch peakResult_reg[1][1] cannot be properly analyzed as its control pin peakResult_reg[1][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch peakResult_reg[1][2] cannot be properly analyzed as its control pin peakResult_reg[1][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch peakResult_reg[1][3] cannot be properly analyzed as its control pin peakResult_reg[1][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch peakResult_reg[1][4] cannot be properly analyzed as its control pin peakResult_reg[1][4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch peakResult_reg[1][5] cannot be properly analyzed as its control pin peakResult_reg[1][5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch peakResult_reg[1][6] cannot be properly analyzed as its control pin peakResult_reg[1][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch peakResult_reg[1][7] cannot be properly analyzed as its control pin peakResult_reg[1][7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch peakResult_reg[1][8] cannot be properly analyzed as its control pin peakResult_reg[1][8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch peakResult_reg[1][9] cannot be properly analyzed as its control pin peakResult_reg[1][9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch peakResult_reg[2][0] cannot be properly analyzed as its control pin peakResult_reg[2][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch peakResult_reg[2][1] cannot be properly analyzed as its control pin peakResult_reg[2][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch peakResult_reg[2][2] cannot be properly analyzed as its control pin peakResult_reg[2][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch peakResult_reg[2][3] cannot be properly analyzed as its control pin peakResult_reg[2][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch peakResult_reg[2][4] cannot be properly analyzed as its control pin peakResult_reg[2][4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch peakResult_reg[2][5] cannot be properly analyzed as its control pin peakResult_reg[2][5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
 The latch peakResult_reg[2][6] cannot be properly analyzed as its control pin peakResult_reg[2][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch peakResult_reg[2][7] cannot be properly analyzed as its control pin peakResult_reg[2][7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch peakResult_reg[2][8] cannot be properly analyzed as its control pin peakResult_reg[2][8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch peakResult_reg[2][9] cannot be properly analyzed as its control pin peakResult_reg[2][9]/G is not reached by a timing clock
 Related violations: <none>
 
 

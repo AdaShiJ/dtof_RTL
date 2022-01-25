@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Mon Dec 20 08:40:23 2021
+| Date             : Wed Jan 12 17:49:45 2022
 | Host             : panther running 64-bit major release  (build 9200)
 | Command          : report_power -file hisBuilderFSM_power_routed.rpt -pb hisBuilderFSM_power_summary_routed.pb -rpx hisBuilderFSM_power_routed.rpx
 | Design           : hisBuilderFSM
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 12.482 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 28.994 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 11.442                           |
+| Dynamic (W)              | 27.954                           |
 | Device Static (W)        | 1.039                            |
 | Effective TJA (C/W)      | 11.5                             |
 | Max Ambient (C)          | 0.0                              |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     3.276 |     6982 |       --- |             --- |
-|   LUT as Logic |     3.126 |     1725 |     53200 |            3.24 |
-|   Register     |     0.090 |     4363 |    106400 |            4.10 |
-|   F7/F8 Muxes  |     0.048 |      792 |     53200 |            1.49 |
-|   CARRY4       |     0.006 |       11 |     13300 |            0.08 |
-|   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |        5 |       --- |             --- |
-| Signals        |     6.075 |     5180 |       --- |             --- |
-| I/O            |     2.092 |       39 |       125 |           31.20 |
+| Slice Logic    |     5.273 |     7596 |       --- |             --- |
+|   LUT as Logic |     4.963 |     2244 |     53200 |            4.22 |
+|   F7/F8 Muxes  |     0.187 |      792 |     53200 |            1.49 |
+|   Register     |     0.067 |     4439 |    106400 |            4.17 |
+|   CARRY4       |     0.047 |       23 |     13300 |            0.17 |
+|   BUFG         |     0.009 |        3 |        32 |            9.38 |
+|   Others       |     0.000 |        4 |       --- |             --- |
+| Signals        |    13.700 |     5752 |       --- |             --- |
+| I/O            |     8.982 |       43 |       125 |           34.40 |
 | Static Power   |     1.039 |          |           |                 |
-| Total          |    12.482 |          |           |                 |
+| Total          |    28.994 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,11 +72,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     9.682 |       9.383 |      0.299 |
-| Vccaux    |       1.800 |     0.268 |       0.169 |      0.100 |
+| Vccint    |       1.000 |    19.319 |      19.021 |      0.299 |
+| Vccaux    |       1.800 |     0.831 |       0.731 |      0.100 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.976 |       0.975 |      0.001 |
+| Vcco18    |       1.800 |     4.233 |       4.232 |      0.001 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -146,7 +146,7 @@ Table of Contents
 +---------------+-----------+
 | Name          | Power (W) |
 +---------------+-----------+
-| hisBuilderFSM |    11.443 |
+| hisBuilderFSM |    27.954 |
 +---------------+-----------+
 
 
