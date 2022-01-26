@@ -201,25 +201,25 @@ SiFHtop SiFHtop(
     //.peakResult(peakResult)
 );
 
-SRAMtest SRAMtest(
-    .QA(counts), 
-    //.QB(newCounts), //read output
-    .ADRA(raddr), //read addr
-    .WEA(~rEnable), //
-    .MEA(rEnable), //memory enable
-    .CLKA(clk), //
-    .TEST1A(1'b0),
-    .RMEA(1'b0),
-    .RMA(4'b0),
-    .LS(1'b0),
-    .ADRB(addrb),
-    .DB(newCounts), //write input
-    .WEB(wEnable),
-    .MEB(wEnable),
-    .CLKB(clk),
-    .TEST1B(1'b0),
-    .RMEB(1'b0),
-    .RMB(4'b0)
-);
+// SRAMtest SRAMtest(
+//     .QA(counts), 
+//     //.QB(newCounts), //read output
+//     .ADRA(raddr), //read addr
+//     .WEA(~rEnable), //
+//     .MEA(rEnable), //memory enable
+//     .CLKA(clk), //
+//     .TEST1A(1'b0),
+//     .RMEA(1'b0),
+//     .RMA(4'b0),
+//     .LS(1'b0),
+//     .ADRB(addrb),
+//     .DB(newCounts), //write input
+//     .WEB(wEnable),
+//     .MEB(wEnable),
+//     .CLKB(clk),
+//     .TEST1B(1'b0),
+//     .RMEB(1'b0),
+//     .RMB(4'b0)
+// );
 
 endmodule

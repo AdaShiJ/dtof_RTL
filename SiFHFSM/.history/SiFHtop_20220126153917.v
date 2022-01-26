@@ -220,8 +220,8 @@ hisBuilderFSM hisBuilderFSM (
     .raddr(raddrHis), //addrb
     .wEnable(wEnableHis), //a 1-> Enable
     .rEnable(rEnableHis), //b 0-> Enable
-    //.writeFlag(writeFlagHis), //mea
-    //.readFlag(readFlagHis), //meb memory enable
+    .writeFlag(writeFlagHis), //mea
+    .readFlag(readFlagHis), //meb memory enable
 
     .newCounts(newCountsHis),
     .hisBuildDone(hisBuildDone)

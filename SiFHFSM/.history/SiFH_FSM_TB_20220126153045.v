@@ -194,8 +194,8 @@ SiFHtop SiFHtop(
     .raddr(raddr), //addrb
     .wEnable(wEnable), //a 1-> Enable
     .rEnable(rEnable), //b 0-> Enable
-    //.writeFlag(writeFlag), //mea
-    //.readFlag(readFlag), //meb memory enable
+    .writeFlag(writeFlag), //mea
+    .readFlag(readFlag), //meb memory enable
 
     .newCounts(newCounts)//,
     //.peakResult(peakResult)

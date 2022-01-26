@@ -194,8 +194,8 @@ SiFHtop SiFHtop(
     .raddr(raddr), //addrb
     .wEnable(wEnable), //a 1-> Enable
     .rEnable(rEnable), //b 0-> Enable
-    //.writeFlag(writeFlag), //mea
-    //.readFlag(readFlag), //meb memory enable
+    .writeFlag(writeFlag), //mea
+    .readFlag(readFlag), //meb memory enable
 
     .newCounts(newCounts)//,
     //.peakResult(peakResult)
@@ -203,20 +203,21 @@ SiFHtop SiFHtop(
 
 SRAMtest SRAMtest(
     .QA(counts), 
-    //.QB(newCounts), //read output
-    .ADRA(raddr), //read addr
-    .WEA(~rEnable), //
-    .MEA(rEnable), //memory enable
-    .CLKA(clk), //
+    .QB(newCounts), //
+    .ADRA(addra), //
+    .DA(wdata), //
+    .WEA(wea), //
+    .MEA(mea), //memory enable
+    .CLKA(clka), //
     .TEST1A(1'b0),
     .RMEA(1'b0),
     .RMA(4'b0),
     .LS(1'b0),
     .ADRB(addrb),
-    .DB(newCounts), //write input
-    .WEB(wEnable),
-    .MEB(wEnable),
-    .CLKB(clk),
+    //.DB,
+    //.WEB,
+    .MEB(meb),
+    .CLKB(clkb),
     .TEST1B(1'b0),
     .RMEB(1'b0),
     .RMB(4'b0)

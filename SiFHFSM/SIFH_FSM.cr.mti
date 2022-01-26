@@ -1,12 +1,12 @@
 {D:/OneDrive - Delft University of Technology/thesis/RTL/SiFHFSM/parametersSiFH.vh} {1 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/SiFHFSM/parametersSiFH.vh}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 
-} {} {}} {D:/OneDrive - Delft University of Technology/thesis/RTL/SiFHFSM/SiFH_FSM_TB.v} {1 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/SiFHFSM/SiFH_FSM_TB.v}
+} {} {}} {D:/OneDrive - Delft University of Technology/thesis/RTL/SiFHFSM/SiFHtop.v} {1 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/SiFHFSM/SiFHtop.v}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module SiFH_FSM_TB
+-- Compiling module SiFHtop
 
 Top level modules:
-	SiFH_FSM_TB
+	SiFHtop
 
 } {} {}} {D:/OneDrive - Delft University of Technology/thesis/RTL/SiFHFSM/hisBuilderFSM.v} {1 {vlog -work work -vopt -stats=none {D:/OneDrive - Delft University of Technology/thesis/RTL/SiFHFSM/hisBuilderFSM.v}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
