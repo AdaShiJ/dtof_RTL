@@ -127,7 +127,7 @@ always @(posedge clk or negedge res) begin
                 raddr       <= 0;
                 waddr       <= 0;
                 //readFlag    <= 0;
-                rEnable     <= 0;
+                rEnable     <= 1;
                 //writeFlag   <= 0;
                 wEnable     <= 0;
                 readFinish  <= 0;

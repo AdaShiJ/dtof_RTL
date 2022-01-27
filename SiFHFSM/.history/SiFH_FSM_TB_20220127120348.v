@@ -212,7 +212,7 @@ SRAMtest SRAMtest(
     .RMEA(1'b0),
     .RMA(4'b0),
     .LS(1'b0),
-    .ADRB(waddr),
+    .ADRB(addrb),
     .DB(newCounts), //write input
     .WEB(wEnable),
     .MEB(wEnable),

@@ -212,7 +212,7 @@ SRAMtest SRAMtest(
     .RMEA(1'b0),
     .RMA(4'b0),
     .LS(1'b0),
-    .ADRB(waddr),
+    .ADRB(addrb),
     .DB(newCounts), //write input
     .WEB(wEnable),
     .MEB(wEnable),
@@ -228,20 +228,3 @@ endmodule
 //2 acq 3 pixels 2 data per pixel
 //6 bits -> 4 bits
 //histogram 1
-010111
-010110
-
-000110
-001000
-
-011110
-011101
-
-011110
-011101
-
-001010
-000101
-
-000110
-010101

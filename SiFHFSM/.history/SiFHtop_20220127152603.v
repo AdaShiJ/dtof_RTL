@@ -44,7 +44,7 @@ localparam RESET = 3'd6;
 
 reg [2:0] current_state = 3'b0;
 reg [2:0] next_state = 3'b0;
-reg resetFlag = 0; 
+reg resetFlag;
 
 reg resHis = 1;
 reg [23:0] counter = 0;
@@ -114,89 +114,94 @@ end
 
 always @(posedge clk or negedge res) begin
     if (resetFlag) begin
-        readFlag    <= 0;
-        rEnable     <= 0;
-
-        writeFlag   <= 1;
-        newCounts   <= 0;
         
-        if (counter == 0) begin
-            waddr       <= 0; //addra
-            wEnable     <= 1;
-            counter <= counter + 1;
-        end
-        else begin
-            waddr       <= waddr + 1; //addra
-            wEnable     <= 1; 
-        
-            if (waddr == (`BIN_NUM_PER_HIS*`PIXEL_NUM_PER_RAM - 2)) begin
-                wrEn <= 1;
-                counter     <= 0;
-            end
-            else begin
-                wrEn    <= 0;
-                counter <= counter + 1;
-
-            end 
-
-        end
     end
 end
 
-always @(*) begin
+always @(posedge clk or negedge res) begin
     if (~res) begin
-            waddr       = 0; //addra
-            raddr       = 0; //addrb
-            wEnable     = 0; //a 1-> Enable
-            rEnable     = 0; //b 0-> Enable
-            writeFlag   = 0;
-            readFlag    = 0; //memory enable
-            resHis      = 0;
+            waddr       <= 0; //addra
+            raddr       <= 0; //addrb
+            wEnable     <= 0; //a 1-> Enable
+            rEnable     <= 0; //b 0-> Enable
+            writeFlag   <= 0;
+            readFlag    <= 0; //memory enable
+            resHis      <= 0;
     end
     else begin
-        resHis      = 1;
+        resHis      <= 1;
         case (current_state)
 
             RESET:begin //read pixel 0 data 0, read only
-                resetFlag = 1;
+                //resetFlag   <= 0;
+                readFlag    <= 0;
+                rEnable     <= 0;
+                //raddr       <= 0; //addrb
+
+                writeFlag   <= 1;
+                //wEnable     <= 1;
+                //waddr       <= addrr;
+                newCounts   <= 0;
+                
+                if (counter == 0) begin
+                    waddr       <= 0; //addra
+                    wEnable     <= 1;
+                    counter <= counter + 1;
+                end
+                else begin
+                    waddr       <= waddr + 1; //addra
+                    wEnable     <= 1; 
+                
+                    if (waddr == (`BIN_NUM_PER_HIS*`PIXEL_NUM_PER_RAM - 2)) begin
+                        wrEn <= 1;
+                        counter     <= 0;
+                    end
+                    else begin
+                        wrEn    <= 0;
+                        counter <= counter + 1;
+
+                    end 
+
+                end
+
                 end
 
             IDLE: begin
-                raddr       = 0;
-                readFlag    = 0;
-                rEnable     = 0;
-                writeFlag   = 0;
-                wEnable     = 0;
-                counter     = 0;
+                raddr       <= 0;
+                readFlag    <= 0;
+                rEnable     <= 0;
+                writeFlag   <= 0;
+                wEnable     <= 0;
+                counter     <= 0;
 
-                wrEn    = 0;
+                wrEn    <= 0;
                 
             end
 
             M0: begin
-                dataHis     =  addr;
-                countsHis   =  counts; //output b
-                waddr       =  waddrHis; //addra
-                raddr       =  raddrHis; //addrb
-                wEnable     =  wEnableHis; //a 1-> Enable
-                rEnable     =  rEnableHis; //b 0-> Enable
-                writeFlag   =  writeFlagHis; //mea
-                readFlag    =  readFlagHis; //meb memory enable
-                newCounts   =  newCountsHis;
+                dataHis     <=  addr;
+                countsHis   <=  counts; //output b
+                waddr       <=  waddrHis; //addra
+                raddr       <=  raddrHis; //addrb
+                wEnable     <=  wEnableHis; //a 1-> Enable
+                rEnable     <=  rEnableHis; //b 0-> Enable
+                writeFlag   <=  writeFlagHis; //mea
+                readFlag    <=  readFlagHis; //meb memory enable
+                newCounts   <=  newCountsHis;
 
-               wrEn    = 0;
+               wrEn    <= 0;
             end
             M1: begin
-                raddr       = 0;
+                raddr       <= 0;
             end
             M2: begin
-                raddr       = 0;
+                raddr       <= 0;
             end
             M3: begin
-                raddr       = 0;
+                raddr       <= 0;
             end
             M4: begin
-                raddr       = 0;
+                raddr       <= 0;
             end
 
         endcase
